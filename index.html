@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Horridge Family</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network/styles/vis-network.min.css">
   <style>
     body {
       font-family: sans-serif;
@@ -19,14 +20,23 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    #familyTree {
+      width: 100%;
+      height: 600px;
+      margin-top: 40px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #fff;
     }
-    p.caption {
-      font-style: italic;
-      color: #666;
-      margin-top: 0.5em;
+    pre {
+      text-align: left;
+      background: #fff;
+      padding: 1em;
+      border-radius: 10px;
+      max-width: 90%;
+      margin: 2em auto;
+      overflow-x: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
   </style>
 </head>
@@ -34,5 +44,35 @@
   <h1>Welcome to the Horridge Family Website</h1>
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
+
+  <h2>Interactive Family Tree</h2>
+  <div id="familyTree">Loading family tree...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script>
+    const nodes = new vis.DataSet([
+      { id: "I1", label: "Andrew John Paul Horridge" },
+      { id: "I2", label: "Roy Francis Horridge" },
+      { id: "I3", label: "Sheila Margaret Slattery" },
+      { id: "I4", label: "Sarah Louise Embling" },
+      { id: "I5", label: "Gerard Embling" }
+    ]);
+
+    const edges = new vis.DataSet([
+      { from: "I2", to: "I1" },
+      { from: "I3", to: "I1" },
+      { from: "I2", to: "I22" },
+      { from: "I3", to: "I22" },
+      { from: "I2", to: "I23" }
+    ]);
+
+    const container = document.getElementById("familyTree");
+    const data = { nodes: nodes, edges: edges };
+    const options = {
+      layout: { hierarchical: { direction: "UD" } },
+      physics: false
+    };
+    new vis.Network(container, data, options);
+  </script>
 </body>
 </html>
