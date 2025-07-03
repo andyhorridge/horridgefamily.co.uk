@@ -35,27 +35,17 @@
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
 
-  <h2>Explore the Full Family Tree</h2>
+  <h2>Explore the Family Tree</h2>
   <div id="tree"></div>
 
-  <script type="application/json" id="family-data">
-
-
   <script>
-    const jsonData = document.getElementById("family-data").textContent;
-    const nodes = JSON.parse(jsonData);
-
+    const demoNodes = [
+      { id: 1, name: "Andrew Horridge" },
+      { id: 2, pid: 1, name: "Child Horridge" }
+    ];
     new FamilyTree(document.getElementById("tree"), {
-      mode: "light",
-      template: "john",
-      nodeBinding: {
-        field_0: "name"
-      },
-      enableSearch: true,
-      enableEdit: false,
-      enableZoom: true,
-      scaleInitial: FamilyTree.match.boundary,
-      nodes: nodes
+      nodeBinding: { field_0: "name" },
+      nodes: demoNodes
     });
   </script>
 </body>
