@@ -51,14 +51,18 @@
       { id: "I8", label: "Eve Helena Embling" },
       { id: "I9", label: "Sean Smith" },
       { id: "I10", label: "Giorgia Annie Smith" },
-      { id: "I22", label: "[Child of Roy & Sheila 1]" },
-      { id: "I23", label: "[Child of Roy & Sheila 2]" }
+      { id: "I22", label: "Child of Roy & Sheila 1" },
+      { id: "I23", label: "Child of Roy & Sheila 2" },
+      { id: "I24", label: "Child of Roy & Sheila 3" },
+      { id: "I25", label: "Child of Roy & Sheila 4" }
     ]);
 
     const allEdges = [
       { from: "I2", to: "I1" }, { from: "I3", to: "I1" },
       { from: "I2", to: "I22" }, { from: "I3", to: "I22" },
       { from: "I2", to: "I23" }, { from: "I3", to: "I23" },
+      { from: "I2", to: "I24" }, { from: "I3", to: "I24" },
+      { from: "I2", to: "I25" }, { from: "I3", to: "I25" },
       { from: "I5", to: "I4" }, { from: "I6", to: "I4" },
       { from: "I5", to: "I7" }, { from: "I6", to: "I7" },
       { from: "I5", to: "I8" }, { from: "I6", to: "I8" },
@@ -67,7 +71,7 @@
 
     const container = document.getElementById("familyTree");
     const data = {
-      nodes: new vis.DataSet([allNodes.get("I1")]), // start with one node
+      nodes: new vis.DataSet([allNodes.get("I1")]),
       edges: new vis.DataSet([])
     };
 
@@ -85,15 +89,17 @@
     network.on("doubleClick", function (params) {
       if (params.nodes.length > 0) {
         const nodeId = params.nodes[0];
-        const newEdges = allEdges.filter(e => e.from === nodeId);
-        const newNodeIds = newEdges.map(e => e.to);
+        const childrenEdges = allEdges.filter(e => e.from === nodeId);
+        const newNodeIds = childrenEdges.map(e => e.to);
+
         newNodeIds.forEach(id => {
           if (!data.nodes.get(id)) {
             const node = allNodes.get(id);
             if (node) data.nodes.add(node);
           }
         });
-        newEdges.forEach(e => {
+
+        childrenEdges.forEach(e => {
           if (!data.edges.get({ filter: edge => edge.from === e.from && edge.to === e.to })) {
             data.edges.add(e);
           }
