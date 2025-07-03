@@ -22,21 +22,11 @@
     }
     #familyTree {
       width: 100%;
-      height: 600px;
+      height: 800px;
       margin-top: 40px;
       border: 1px solid #ccc;
       border-radius: 12px;
       background-color: #fff;
-    }
-    pre {
-      text-align: left;
-      background: #fff;
-      padding: 1em;
-      border-radius: 10px;
-      max-width: 90%;
-      margin: 2em auto;
-      overflow-x: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
   </style>
 </head>
@@ -45,34 +35,71 @@
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
 
-  <h2>Interactive Family Tree</h2>
+  <h2>Explore the Family Tree</h2>
   <div id="familyTree">Loading family tree...</div>
 
   <script src="https://cdn.jsdelivr.net/npm/vis-network/standalone/umd/vis-network.min.js"></script>
   <script>
-    const nodes = new vis.DataSet([
+    const allNodes = new vis.DataSet([
       { id: "I1", label: "Andrew John Paul Horridge" },
       { id: "I2", label: "Roy Francis Horridge" },
       { id: "I3", label: "Sheila Margaret Slattery" },
       { id: "I4", label: "Sarah Louise Embling" },
-      { id: "I5", label: "Gerard Embling" }
+      { id: "I5", label: "Gerard Embling" },
+      { id: "I6", label: "Joan Robinson" },
+      { id: "I7", label: "Luke Ashley Embling" },
+      { id: "I8", label: "Eve Helena Embling" },
+      { id: "I9", label: "Sean Smith" },
+      { id: "I10", label: "Giorgia Annie Smith" },
+      { id: "I22", label: "[Child of Roy & Sheila 1]" },
+      { id: "I23", label: "[Child of Roy & Sheila 2]" }
     ]);
 
-    const edges = new vis.DataSet([
-      { from: "I2", to: "I1" },
-      { from: "I3", to: "I1" },
-      { from: "I2", to: "I22" },
-      { from: "I3", to: "I22" },
-      { from: "I2", to: "I23" }
-    ]);
+    const allEdges = [
+      { from: "I2", to: "I1" }, { from: "I3", to: "I1" },
+      { from: "I2", to: "I22" }, { from: "I3", to: "I22" },
+      { from: "I2", to: "I23" }, { from: "I3", to: "I23" },
+      { from: "I5", to: "I4" }, { from: "I6", to: "I4" },
+      { from: "I5", to: "I7" }, { from: "I6", to: "I7" },
+      { from: "I5", to: "I8" }, { from: "I6", to: "I8" },
+      { from: "I9", to: "I10" }, { from: "I8", to: "I10" }
+    ];
 
     const container = document.getElementById("familyTree");
-    const data = { nodes: nodes, edges: edges };
-    const options = {
-      layout: { hierarchical: { direction: "UD" } },
-      physics: false
+    const data = {
+      nodes: new vis.DataSet([allNodes.get("I1")]), // start with one node
+      edges: new vis.DataSet([])
     };
-    new vis.Network(container, data, options);
+
+    const network = new vis.Network(container, data, {
+      layout: { hierarchical: { direction: "UD" } },
+      physics: false,
+      interaction: { hover: true },
+      nodes: {
+        shape: "box",
+        color: { background: "#e3f2fd", border: "#90caf9" },
+        font: { face: "Arial" }
+      }
+    });
+
+    network.on("doubleClick", function (params) {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        const newEdges = allEdges.filter(e => e.from === nodeId);
+        const newNodeIds = newEdges.map(e => e.to);
+        newNodeIds.forEach(id => {
+          if (!data.nodes.get(id)) {
+            const node = allNodes.get(id);
+            if (node) data.nodes.add(node);
+          }
+        });
+        newEdges.forEach(e => {
+          if (!data.edges.get({ filter: edge => edge.from === e.from && edge.to === e.to })) {
+            data.edges.add(e);
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
