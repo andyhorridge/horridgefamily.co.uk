@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Horridge Family</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network/styles/vis-network.min.css">
   <style>
     body {
       font-family: sans-serif;
@@ -20,15 +19,16 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
-    #familyTree {
+    #tree {
       width: 100%;
       height: 900px;
       margin-top: 40px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
       background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
     }
   </style>
+  <script src="https://balkangraph.com/js/latest/FamilyTree.js"></script>
 </head>
 <body>
   <h1>Welcome to the Horridge Family Website</h1>
@@ -36,69 +36,17 @@
   <p class="caption">Family photo from 6th May 2023</p>
 
   <h2>Explore the Full Family Tree</h2>
-  <div id="familyTree">Loading family tree...</div>
+  <div id="tree"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vis-network/standalone/umd/vis-network.min.js"></script>
   <script>
-    const allNodes = new vis.DataSet([
-      { id: "I1", label: "Andrew John Paul Horridge" },
-      { id: "I2", label: "Roy Francis Horridge" },
-      { id: "I3", label: "Sheila Margaret Slattery" },
-      { id: "I4", label: "Sarah Louise Embling" },
-      { id: "I5", label: "Gerard Embling" },
-      { id: "I6", label: "Joan Robinson" },
-      { id: "I7", label: "Luke Ashley Embling" },
-      { id: "I8", label: "Eve Helena Embling" },
-      { id: "I9", label: "Sean Smith" },
-      { id: "I10", label: "Giorgia Annie Smith" },
-      { id: "I12", label: "Parent of Gerard Embling" },
-      { id: "I13", label: "Parent of Gerard Embling" },
-      { id: "I22", label: "Child of Roy & Sheila 1" },
-      { id: "I23", label: "Child of Roy & Sheila 2" },
-      { id: "I24", label: "Child of Roy & Sheila 3" },
-      { id: "I25", label: "Child of Roy & Sheila 4" },
-      { id: "I33", label: "Grandparent of Roy" },
-      { id: "I34", label: "Grandparent of Roy" },
-      { id: "I35", label: "Sibling of Roy 1" },
-      { id: "I36", label: "Sibling of Roy 2" },
-      { id: "I50", label: "Sibling of Gerard 1" },
-      { id: "I51", label: "Sibling of Gerard 2" }
-    ]);
-
-    const allEdges = [
-      { from: "I2", to: "I1" }, { from: "I3", to: "I1" },
-      { from: "I2", to: "I22" }, { from: "I3", to: "I22" },
-      { from: "I2", to: "I23" }, { from: "I3", to: "I23" },
-      { from: "I2", to: "I24" }, { from: "I3", to: "I24" },
-      { from: "I2", to: "I25" }, { from: "I3", to: "I25" },
-      { from: "I5", to: "I4" }, { from: "I6", to: "I4" },
-      { from: "I5", to: "I7" }, { from: "I6", to: "I7" },
-      { from: "I5", to: "I8" }, { from: "I6", to: "I8" },
-      { from: "I9", to: "I10" }, { from: "I8", to: "I10" },
-      { from: "I12", to: "I5" }, { from: "I13", to: "I5" },
-      { from: "I12", to: "I50" }, { from: "I13", to: "I50" },
-      { from: "I12", to: "I51" }, { from: "I13", to: "I51" },
-      { from: "I33", to: "I2" }, { from: "I34", to: "I2" },
-      { from: "I33", to: "I35" }, { from: "I34", to: "I35" },
-      { from: "I33", to: "I36" }, { from: "I34", to: "I36" }
-    ];
-
-    const container = document.getElementById("familyTree");
-    const data = {
-      nodes: allNodes,
-      edges: allEdges
-    };
-
-    const network = new vis.Network(container, data, {
-      layout: { hierarchical: { direction: "UD", sortMethod: "directed" } },
-      physics: false,
-      interaction: { hover: true, navigationButtons: true },
-      nodes: {
-        shape: "box",
-        color: { background: "#e3f2fd", border: "#90caf9" },
-        font: { face: "Arial", size: 14 }
-      }
-    });
-  </script>
-</body>
-</html>
+    const family = new FamilyTree(document.getElementById("tree"), {
+      mode: "light",
+      template: "john",
+      nodeBinding: {
+        field_0: "name"
+      },
+      enableSearch: true,
+      enableEdit: false,
+      enableZoom: true,
+      scaleInitial: FamilyTree.match.boundary,
+      nodes: 
