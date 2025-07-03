@@ -27,39 +27,27 @@
       overflow: hidden;
     }
   </style>
-  <script src="https://balkangraph.com/js/latest/OrgChart.js"></script>
+  <script src="OrgChart.js"></script>
+  <script src="orgchart-data.js"></script>
 </head>
 <body>
   <h1>Welcome to the Horridge Family Website</h1>
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
 
-  <h2>Explore the Family Tree</h2>
+  <h2>Explore the Full Family Tree</h2>
   <div id="tree-wrapper"></div>
 
   <script>
-    fetch('tree-data.json')
-      .then(res => res.json())
-      .then(data => {
-        const nodes = data.map(person => {
-          return {
-            id: person.id,
-            pid: person.pid,
-            mid: person.mid,
-            name: person.name
-          };
-        });
-
-        new OrgChart(document.getElementById("tree-wrapper"), {
-          nodes: nodes,
-          layout: OrgChart.tree,
-          enableSearch: true,
-          enableDragDrop: false,
-          nodeBinding: {
-            field_0: "name"
-          }
-        });
-      });
+    new OrgChart(document.getElementById("tree-wrapper"), {
+      nodes: orgchart_nodes,
+      layout: OrgChart.tree,
+      enableSearch: true,
+      enableDragDrop: false,
+      nodeBinding: {
+        field_0: "name"
+      }
+    });
   </script>
 </body>
 </html>
