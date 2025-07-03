@@ -32,31 +32,11 @@
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
 
-  <h2>Explore the Family Tree</h2>
+  <h2>Explore the Full Family Tree</h2>
   <div class="chart" id="tree-simple"></div>
 
+  <script src="familytree-config.js"></script>
   <script>
-    const chart_config = {
-      chart: {
-        container: "#tree-simple",
-        rootOrientation: "NORTH",
-        connectors: { type: 'step' },
-        node: { HTMLclass: 'node-name' }
-      },
-      nodeStructure: {
-        text: { name: "Andrew Horridge" },
-        children: [
-          {
-            text: { name: "Elliot Horridge" },
-            children: [
-              { text: { name: "Ben Horridge" } },
-              { text: { name: "Harriet Horridge" } }
-            ]
-          },
-          { text: { name: "Sarah Horridge" } }
-        ]
-      }
-    };
     new Treant(chart_config);
   </script>
 </body>
