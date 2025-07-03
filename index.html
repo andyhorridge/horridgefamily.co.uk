@@ -39,13 +39,22 @@
   <div id="tree"></div>
 
   <script>
-    const demoNodes = [
-      { id: 1, name: "Andrew Horridge" },
-      { id: 2, pid: 1, name: "Child Horridge" }
-    ];
-    new FamilyTree(document.getElementById("tree"), {
-      nodeBinding: { field_0: "name" },
-      nodes: demoNodes
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof FamilyTree === 'undefined') {
+        document.getElementById("tree").innerText = "Error loading tree: FamilyTreeJS not available.";
+        console.error("FamilyTree is not defined. Check script load.");
+        return;
+      }
+
+      const demoNodes = [
+        { id: 1, name: "Andrew Horridge" },
+        { id: 2, pid: 1, name: "Child Horridge" }
+      ];
+
+      new FamilyTree(document.getElementById("tree"), {
+        nodeBinding: { field_0: "name" },
+        nodes: demoNodes
+      });
     });
   </script>
 </body>
