@@ -38,8 +38,14 @@
   <h2>Explore the Full Family Tree</h2>
   <div id="tree"></div>
 
+  <script type="application/json" id="family-data">
+
+
   <script>
-    const family = new FamilyTree(document.getElementById("tree"), {
+    const jsonData = document.getElementById("family-data").textContent;
+    const nodes = JSON.parse(jsonData);
+
+    new FamilyTree(document.getElementById("tree"), {
       mode: "light",
       template: "john",
       nodeBinding: {
@@ -49,4 +55,8 @@
       enableEdit: false,
       enableZoom: true,
       scaleInitial: FamilyTree.match.boundary,
-      nodes: 
+      nodes: nodes
+    });
+  </script>
+</body>
+</html>
