@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Horridge Family</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.css">
   <style>
     body {
       font-family: sans-serif;
@@ -19,16 +20,12 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
-    #tree {
-      width: 100%;
-      height: 900px;
-      margin-top: 40px;
-      background-color: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-    }
+    .chart { width: 100%; height: auto; overflow-x: scroll; }
+    #tree-simple { width: 100%; height: auto; margin-top: 40px; }
+    .node-name { font-weight: bold; }
   </style>
-  <script src="https://balkangraph.com/js/latest/FamilyTree.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.min.js"></script>
 </head>
 <body>
   <h1>Welcome to the Horridge Family Website</h1>
@@ -36,26 +33,31 @@
   <p class="caption">Family photo from 6th May 2023</p>
 
   <h2>Explore the Family Tree</h2>
-  <div id="tree"></div>
+  <div class="chart" id="tree-simple"></div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      if (typeof FamilyTree === 'undefined') {
-        document.getElementById("tree").innerText = "Error loading tree: FamilyTreeJS not available.";
-        console.error("FamilyTree is not defined. Check script load.");
-        return;
+    const chart_config = {
+      chart: {
+        container: "#tree-simple",
+        rootOrientation: "NORTH",
+        connectors: { type: 'step' },
+        node: { HTMLclass: 'node-name' }
+      },
+      nodeStructure: {
+        text: { name: "Andrew Horridge" },
+        children: [
+          {
+            text: { name: "Elliot Horridge" },
+            children: [
+              { text: { name: "Ben Horridge" } },
+              { text: { name: "Harriet Horridge" } }
+            ]
+          },
+          { text: { name: "Sarah Horridge" } }
+        ]
       }
-
-      const demoNodes = [
-        { id: 1, name: "Andrew Horridge" },
-        { id: 2, pid: 1, name: "Child Horridge" }
-      ];
-
-      new FamilyTree(document.getElementById("tree"), {
-        nodeBinding: { field_0: "name" },
-        nodes: demoNodes
-      });
-    });
+    };
+    new Treant(chart_config);
   </script>
 </body>
 </html>
