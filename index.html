@@ -22,7 +22,7 @@
     }
     #familyTree {
       width: 100%;
-      height: 800px;
+      height: 900px;
       margin-top: 40px;
       border: 1px solid #ccc;
       border-radius: 12px;
@@ -35,7 +35,7 @@
   <img src="2023-05-06.JPG" alt="Family Photo">
   <p class="caption">Family photo from 6th May 2023</p>
 
-  <h2>Explore the Family Tree</h2>
+  <h2>Explore the Full Family Tree</h2>
   <div id="familyTree">Loading family tree...</div>
 
   <script src="https://cdn.jsdelivr.net/npm/vis-network/standalone/umd/vis-network.min.js"></script>
@@ -51,10 +51,18 @@
       { id: "I8", label: "Eve Helena Embling" },
       { id: "I9", label: "Sean Smith" },
       { id: "I10", label: "Giorgia Annie Smith" },
+      { id: "I12", label: "Parent of Gerard Embling" },
+      { id: "I13", label: "Parent of Gerard Embling" },
       { id: "I22", label: "Child of Roy & Sheila 1" },
       { id: "I23", label: "Child of Roy & Sheila 2" },
       { id: "I24", label: "Child of Roy & Sheila 3" },
-      { id: "I25", label: "Child of Roy & Sheila 4" }
+      { id: "I25", label: "Child of Roy & Sheila 4" },
+      { id: "I33", label: "Grandparent of Roy" },
+      { id: "I34", label: "Grandparent of Roy" },
+      { id: "I35", label: "Sibling of Roy 1" },
+      { id: "I36", label: "Sibling of Roy 2" },
+      { id: "I50", label: "Sibling of Gerard 1" },
+      { id: "I51", label: "Sibling of Gerard 2" }
     ]);
 
     const allEdges = [
@@ -66,44 +74,29 @@
       { from: "I5", to: "I4" }, { from: "I6", to: "I4" },
       { from: "I5", to: "I7" }, { from: "I6", to: "I7" },
       { from: "I5", to: "I8" }, { from: "I6", to: "I8" },
-      { from: "I9", to: "I10" }, { from: "I8", to: "I10" }
+      { from: "I9", to: "I10" }, { from: "I8", to: "I10" },
+      { from: "I12", to: "I5" }, { from: "I13", to: "I5" },
+      { from: "I12", to: "I50" }, { from: "I13", to: "I50" },
+      { from: "I12", to: "I51" }, { from: "I13", to: "I51" },
+      { from: "I33", to: "I2" }, { from: "I34", to: "I2" },
+      { from: "I33", to: "I35" }, { from: "I34", to: "I35" },
+      { from: "I33", to: "I36" }, { from: "I34", to: "I36" }
     ];
 
     const container = document.getElementById("familyTree");
     const data = {
-      nodes: new vis.DataSet([allNodes.get("I1")]),
-      edges: new vis.DataSet([])
+      nodes: allNodes,
+      edges: allEdges
     };
 
     const network = new vis.Network(container, data, {
-      layout: { hierarchical: { direction: "UD" } },
+      layout: { hierarchical: { direction: "UD", sortMethod: "directed" } },
       physics: false,
-      interaction: { hover: true },
+      interaction: { hover: true, navigationButtons: true },
       nodes: {
         shape: "box",
         color: { background: "#e3f2fd", border: "#90caf9" },
-        font: { face: "Arial" }
-      }
-    });
-
-    network.on("doubleClick", function (params) {
-      if (params.nodes.length > 0) {
-        const nodeId = params.nodes[0];
-        const childrenEdges = allEdges.filter(e => e.from === nodeId);
-        const newNodeIds = childrenEdges.map(e => e.to);
-
-        newNodeIds.forEach(id => {
-          if (!data.nodes.get(id)) {
-            const node = allNodes.get(id);
-            if (node) data.nodes.add(node);
-          }
-        });
-
-        childrenEdges.forEach(e => {
-          if (!data.edges.get({ filter: edge => edge.from === e.from && edge.to === e.to })) {
-            data.edges.add(e);
-          }
-        });
+        font: { face: "Arial", size: 14 }
       }
     });
   </script>
