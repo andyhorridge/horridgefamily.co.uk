@@ -1,0 +1,3694 @@
+0 HEAD
+1 SOUR GRUExport
+2 VERS 3.0.6464.30813
+2 NAME Genes Reunited
+2 CORP Genes Reunited Ltd
+1 DATE 1 JUL 2025
+2 TIME 22:20:23
+1 FILE Horridge family tree.ged
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+1 CHAR ANSEL
+0 @I1@ INDI
+1 NAME Andrew John Paul /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 26 AUG 1978
+2 PLAC Bury, Greater Manchester, England
+1 BAPM 
+2 PLAC Guardian Angels, Bury
+1 RFN 142394302
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I2@ INDI
+1 NAME Roy Francis /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1948
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC St Maries, Bury
+1 RFN 142395412
+1 FAMS @F2@
+1 FAMC @F7@
+0 @I3@ INDI
+1 NAME Sheila Margaret /Slattery/
+2 NICK Margaret
+1 SEX F
+1 BIRT 
+2 DATE 14 AUG 1949
+2 PLAC BURY Lancashire England
+1 RFN 142395413
+1 FAMS @F2@
+1 FAMC @F3@
+0 @I4@ INDI
+1 NAME Sarah Louise /Embling/
+1 SEX F
+1 BIRT 
+2 DATE 23 OCT 1978
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142396003
+1 FAMS @F1@
+1 FAMC @F13@
+0 @I5@ INDI
+1 NAME Gerard /Embling/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142396463
+1 FAMS @F13@
+1 FAMC @F11@
+0 @I6@ INDI
+1 NAME Joan /Robinson/
+1 SEX F
+1 BIRT 
+2 DATE 1946
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142396464
+1 FAMS @F13@
+1 FAMC @F15@
+0 @I7@ INDI
+1 NAME Luke Ashley /Embling/
+1 SEX M
+1 BIRT 
+2 DATE 1990
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142396983
+1 FAMC @F13@
+0 @I8@ INDI
+1 NAME Eve Helena /Embling/
+1 SEX F
+1 BIRT 
+2 DATE 1977
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142397494
+1 FAMS @F12@
+1 FAMC @F13@
+0 @I9@ INDI
+1 NAME Sean /Smith/
+1 SEX M
+1 BIRT 
+2 DATE 1970
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142397871
+1 FAMS @F12@
+1 FAMC @F32@
+0 @I10@ INDI
+1 NAME Giorgia Annie /Smith/
+1 SEX F
+1 BIRT 
+2 DATE 26 AUG 1998
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142400330
+1 FAMC @F12@
+0 @I11@ INDI
+1 NAME Ava Mollie /Smith/
+1 SEX F
+1 BIRT 
+2 DATE 2003
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142400516
+1 FAMC @F12@
+0 @I12@ INDI
+1 NAME John /Embling/
+1 SEX M
+1 BIRT 
+2 DATE 1915
+2 PLAC Hampshire, England
+1 RFN 142403426
+1 FAMS @F11@
+0 @I13@ INDI
+1 NAME Marjorie /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1920
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142403427
+1 FAMS @F11@
+1 FAMC @F88@
+0 @I14@ INDI
+1 NAME Frank /Robinson/
+1 SEX M
+1 BIRT 
+2 DATE 1915
+2 PLAC Howley,WARRINGTON Cheshire England
+1 DEAT 
+2 DATE 1 OCT 1991
+1 RFN 142407724
+1 FAMS @F15@
+1 FAMC @F94@
+0 @I15@ INDI
+1 NAME Annie /Beswick/
+1 SEX F
+1 BIRT 
+2 DATE 1915
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142407725
+1 FAMS @F15@
+1 FAMC @F51@
+0 @I16@ INDI
+1 NAME Pat /Robinson/
+1 SEX F
+1 BIRT 
+2 DATE 1940
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142408304
+1 FAMS @F10@
+1 FAMC @F15@
+0 @I17@ INDI
+1 NAME Dennis /Robinson/
+1 SEX M
+1 BIRT 
+2 DATE 1938
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142408827
+1 FAMS @F14@
+1 FAMC @F15@
+0 @I18@ INDI
+1 NAME Carole /Robinson/
+1 SEX F
+1 BIRT 
+2 DATE 1948
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142409269
+1 FAMC @F15@
+0 @I19@ INDI
+1 NAME Ann /Crimes/
+1 SEX F
+1 BIRT 
+2 DATE 1939
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142409928
+1 FAMS @F14@
+0 @I20@ INDI
+1 NAME Barry /Towers/
+1 SEX M
+1 BIRT 
+2 DATE 1940
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142410709
+1 FAMS @F10@
+0 @I21@ INDI
+1 NAME Paul /Towers/
+1 SEX M
+1 BIRT 
+2 DATE 1964
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142411040
+1 FAMC @F10@
+0 @I22@ INDI
+1 NAME Dominic Francis /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 26 JUL 1975
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC Guardian Angels, Bury
+1 RFN 142411225
+1 FAMS @F9@
+1 FAMC @F2@
+0 @I23@ INDI
+1 NAME Damian Michael /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1 OCT 1976
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC Guardian Angels, Bury
+1 RFN 142411278
+1 FAMS @F8@
+1 FAMC @F2@
+0 @I24@ INDI
+1 NAME Katie Margaret /Horridge/
+2 NICK Katie
+1 SEX F
+1 BIRT 
+2 DATE 25 NOV 1980
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC Guardian Angels, Bury
+1 RFN 142411420
+1 FAMC @F2@
+0 @I25@ INDI
+1 NAME Gemma Jane /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 26 JAN 1983
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC Guardian Angels, Bury
+1 RFN 142411613
+1 FAMC @F2@
+0 @I26@ INDI
+1 NAME Charlotte /Webb/
+1 SEX F
+1 BIRT 
+2 DATE 6 SEP 1974
+2 PLAC KNUTSFORD Cheshire England
+1 RFN 142411681
+1 FAMS @F9@
+0 @I27@ INDI
+1 NAME Rebecca Louise /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 13 DEC 2001
+2 PLAC WARRINGTON Cheshire England
+1 BAPM 
+2 PLAC Sacred Heart, Warrington
+1 RFN 142411762
+1 FAMC @F9@
+0 @I28@ INDI
+1 NAME Daniel Francis /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 4 NOV 2004
+2 PLAC WARRINGTON Cheshire England
+1 BAPM 
+2 PLAC Sacred Heart, Warrington
+1 RFN 142411842
+1 FAMC @F9@
+0 @I29@ INDI
+1 NAME Gail /Marks/
+1 SEX F
+1 BIRT 
+2 DATE 1976
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142412025
+1 FAMS @F8@
+0 @I30@ INDI
+1 NAME Jessica /Marks/
+1 SEX F
+1 BIRT 
+2 DATE 22 AUG 2003
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142412082
+1 FAMC @F8@
+0 @I31@ INDI
+1 NAME Samuel /Slattery/
+2 NICK Sam
+1 SEX M
+1 BIRT 
+2 DATE 14 AUG 1925
+2 PLAC Lower Broughton, Salford, BURY, Lancashire, England
+1 BAPM 
+2 PLAC St Boniface's, Salford
+1 RFN 142412258
+1 FAMS @F3@
+1 FAMC @F26@
+0 @I32@ INDI
+1 NAME Margaret /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 16 OCT 1925
+2 PLAC Ramsbottom, BURY, Lancashire, England
+1 BAPM 
+2 PLAC St Joseph's, Ramsbottom
+1 RFN 142412259
+1 FAMS @F3@
+1 FAMC @F27@
+0 @I33@ INDI
+1 NAME Jesse /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1919
+2 PLAC BURY Lancashire England
+1 DEAT 
+2 DATE 3 DEC 1997
+2 PLAC Blackpool
+1 OCCU  
+2 PLAC Retired Foreman Wool Sorter
+1 SOUR death certificate
+1 RFN 142413435
+1 FAMS @F7@
+1 FAMC @F25@
+0 @I34@ INDI
+1 NAME Marie /Cleary/
+1 SEX F
+1 BIRT 
+2 DATE 6 OCT 1922
+2 PLAC BURY Lancashire England
+1 RFN 142413436
+1 FAMS @F7@
+1 FAMC @F24@
+0 @I35@ INDI
+1 NAME Robert /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 24 DEC 1946
+2 PLAC BURY Lancashire England
+1 RFN 142413981
+1 FAMS @F6@
+1 FAMC @F7@
+0 @I36@ INDI
+1 NAME Keith Vincent /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1953
+2 PLAC BURY Lancashire England
+1 DEAT 
+2 DATE 30 DEC 2005
+2 PLAC Haslingden
+1 OCCU  
+2 PLAC Club steward
+1 SOUR Roy Horridge
+1 RFN 142414097
+1 FAMS @F5@
+1 FAMC @F7@
+0 @I37@ INDI
+1 NAME Alison /Chattwood/
+1 SEX F
+1 BIRT 
+2 DATE 29 JAN 1949
+2 PLAC Haslingden, Lancashire, England
+1 RFN 142414817
+1 FAMS @F6@
+0 @I38@ INDI
+1 NAME Michael Brendan /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 18 OCT 1947
+2 PLAC BURY Lancashire England
+1 RFN 142421267
+1 FAMS @F4@
+1 FAMC @F3@
+0 @I39@ INDI
+1 NAME Carmel Maria /Slattery/
+2 NICK Carm
+1 SEX F
+1 BIRT 
+2 DATE 22 APR 1956
+2 PLAC BURY Lancashire England
+1 RFN 142421333
+1 FAMS @F28@
+1 FAMC @F3@
+0 @I40@ INDI
+1 NAME Susan Mary /Lowe/
+1 SEX F
+1 BIRT 
+2 DATE 18 MAR 1954
+2 PLAC BURY Lancashire England
+1 RFN 142421632
+1 FAMS @F4@
+0 @I41@ INDI
+1 NAME Catherine Mary /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 8 MAR 1979
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC St Hilda's Tottington Nr. Bury
+1 RFN 142421791
+1 FAMC @F4@
+0 @I42@ INDI
+1 NAME Thomas Michael /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 26 JAN 1981
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC St Hilda's, Tottington, Nr Bury
+1 RFN 142421878
+1 FAMC @F4@
+0 @I43@ INDI
+1 NAME Martin James /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 31 JAN 1984
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC St Hilda's Tottington, Nr. Bury
+1 RFN 142421973
+1 FAMC @F4@
+0 @I44@ INDI
+1 NAME Edward John /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 25 JAN 1987
+2 PLAC BURY Lancashire England
+1 BAPM 
+2 PLAC St Hilda's, Tottington, Nr. Bury
+1 RFN 142422079
+1 FAMC @F4@
+0 @I45@ INDI
+1 NAME Andrew William /Huck/
+1 SEX M
+1 BIRT 
+2 DATE 21 JUL 1955
+2 PLAC BURY Lancashire England
+1 RFN 142422230
+1 FAMS @F28@
+0 @I46@ INDI
+1 NAME Jonathan Joseph /Huck/
+1 SEX M
+1 BIRT 
+2 DATE 30 AUG 1986
+2 PLAC BOLTON Lancashire England
+1 RFN 142422963
+1 FAMC @F28@
+0 @I47@ INDI
+1 NAME Nicholas Andrew /Huck/
+1 SEX M
+1 BIRT 
+2 DATE 10 OCT 1988
+2 PLAC BURNLEY Lancashire England
+1 RFN 142423376
+1 FAMC @F28@
+0 @I48@ INDI
+1 NAME Julie /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 31 MAR 1978
+2 PLAC Haslingdon, Greater Manchester, England
+1 RFN 142428640
+1 FAMS @F47@
+1 FAMC @F6@
+0 @I49@ INDI
+1 NAME Paul /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1980
+2 PLAC Hasslingdon, Greater Manchester, England
+1 RFN 142428730
+1 FAMC @F6@
+0 @I50@ INDI
+1 NAME Malcom /Embling/
+1 SEX M
+1 BIRT 
+2 DATE 1949
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142430259
+1 FAMC @F11@
+0 @I51@ INDI
+1 NAME John /Embling/
+1 SEX M
+1 BIRT 
+2 DATE 1945
+2 PLAC WARRINGTON Cheshire England
+1 RFN 142430838
+1 FAMC @F11@
+0 @I52@ INDI
+1 NAME Harry /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 29 APR 1902
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 PLAC Ramsbottom
+1 OCCU  
+2 PLAC Photographer
+1 RFN 142432098
+1 FAMS @F27@
+1 FAMC @F53@
+0 @I53@ INDI
+1 NAME Gladys /Rodgers/
+1 SEX F
+1 BIRT 
+2 DATE 5 AUG 1900
+2 PLAC Chatterton, Nr Ramsbottom, BURY, Lancashire, England
+1 DEAT 
+2 DATE 23 MAR 1987
+2 PLAC Ramsbottom
+1 RFN 142432099
+1 FAMS @F27@
+1 FAMC @F42@
+0 @I54@ INDI
+1 NAME Samuel /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 18 DEC 1893
+2 PLAC SALFORD Lancashire England
+1 DEAT 
+2 DATE 15 MAR 1976
+1 RFN 142464722
+1 FAMS @F26@
+1 FAMC @F44@
+0 @I55@ INDI
+1 NAME Mary Ellen /Brazil/
+1 SEX F
+1 BIRT 
+2 DATE 1900
+2 PLAC SALFORD Lancashire England
+1 DEAT 
+2 DATE 4 MAR 1956
+1 RFN 142464723
+1 FAMS @F26@
+1 FAMC @F43@
+0 @I56@ INDI
+1 NAME Jesse /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 9 SEP 1889
+2 PLAC BURY Lancashire England
+1 RFN 142467209
+1 FAMS @F25@
+1 FAMC @F22@
+0 @I57@ INDI
+1 NAME Mary Olive /Quinn/
+1 SEX F
+1 BIRT 
+2 DATE 25 APR 1905
+2 PLAC Bury, Lancashire, England
+1 DEAT 
+2 DATE 1977
+1 RFN 142467210
+1 FAMS @F25@
+0 @I58@ INDI
+1 NAME Robert Edward /Cleary/
+1 SEX M
+1 BIRT 
+2 DATE 1890
+2 PLAC Dublin ?, Ireland
+1 DEAT 
+2 DATE 9 AUG 1964
+1 OCCU  
+2 PLAC Pattern Maker
+1 NOTE Reference on gravestone to Aunt Mary Keogh - not sure whether related to the Cleary's or the Coligan's
+1 SOUR Moston cemetry
+1 RFN 143998315
+1 FAMS @F24@
+1 FAMC @F30@
+0 @I59@ INDI
+1 NAME Sarah Anne /Coligan/
+1 SEX F
+1 BIRT 
+2 DATE 1889
+2 PLAC Dublin ?, Ireland
+1 DEAT 
+2 DATE 19 DEC 1950
+1 NOTE Reference on gravestone to Aunt Mary Keogh - not sure whether related to the Cleary's or the Coligan's
+1 SOUR Moston cemetry
+1 RFN 143998316
+1 FAMS @F24@
+1 FAMC @F18@
+0 @I60@ INDI
+1 NAME Robert /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1887
+2 PLAC BURY Lancashire England
+1 RFN 144000375
+1 FAMS @F23@
+1 FAMC @F22@
+0 @I61@ INDI
+1 NAME Richard /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1855
+2 PLAC BURY Lancashire England
+1 RFN 144000376
+1 FAMS @F22@
+1 FAMC @F31@
+0 @I62@ INDI
+1 NAME Ann /Marsden/
+1 SEX F
+1 BIRT 
+2 DATE 1855
+2 PLAC BURY Lancashire England
+1 RFN 144000377
+1 FAMS @F22@
+0 @I230@ INDI
+1 NAME Evan /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1884
+2 PLAC BURY Lancashire England
+1 RFN 144000480
+1 FAMC @F22@
+0 @I63@ INDI
+1 NAME William /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1885
+2 PLAC BURY Lancashire England
+1 RFN 144000557
+1 FAMC @F22@
+0 @I64@ INDI
+1 NAME Doreen /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 15 OCT 1925
+2 PLAC BURY Lancashire England
+1 RFN 144005866
+1 FAMS @F21@
+1 FAMC @F25@
+0 @I65@ INDI
+1 NAME Mary /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 24 JAN 1920
+2 PLAC BURY Lancashire England
+1 RFN 144006589
+1 FAMS @F20@
+1 FAMS @F99@
+1 FAMC @F25@
+0 @I66@ INDI
+1 NAME Ronald Harris /Baker/
+1 SEX F
+1 BIRT 
+2 DATE 1922
+2 PLAC TONBRIDGE Kent England
+1 RFN 144006935
+1 FAMS @F21@
+0 @I67@ INDI
+1 NAME Owen /Coligan/
+1 SEX M
+1 BIRT 
+2 DATE 25 NOV 1897
+2 PLAC HEYWOOD Lancashire England
+1 DEAT 
+2 DATE 29 JUN 1959
+2 PLAC 108 Harriett St Walkden
+1 OCCU  
+2 PLAC Electrician
+1 RFN 144008231
+1 FAMS @F19@
+1 FAMC @F18@
+0 @I68@ INDI
+1 NAME Thomas /Coligan/
+1 SEX M
+1 BIRT 
+2 DATE 1859
+2 PLAC PEMBROKE Dyfed Wales
+1 RFN 144008232
+1 FAMS @F18@
+0 @I69@ INDI
+1 NAME Annie /Unknown/
+1 SEX F
+1 BIRT 
+2 DATE 1861
+2 PLAC BURY Lancashire England
+1 RFN 144008233
+1 FAMS @F18@
+0 @I70@ INDI
+1 NAME Mary Cissie /Catlow/
+2 NICK Cissie
+1 SEX F
+1 BIRT 
+2 DATE 10 MAR 1898
+2 PLAC BURY Lancashire England
+1 DEAT 
+2 DATE 19 JUN 1987
+2 PLAC Queens Close, Walkden
+1 OCCU  
+2 PLAC Cotton weaver
+1 RFN 144008331
+1 FAMS @F19@
+0 @I229@ INDI
+1 NAME Marie /Abbott/
+1 SEX F
+1 BIRT 
+2 DATE 25 NOV 1927
+2 PLAC Farnworth, BURY, Lancashire, England
+1 DEAT 
+2 DATE 24 DEC 2005
+2 PLAC St Anne's hospice
+1 BAPM 
+2 PLAC St Gregory's
+1 OCCU  
+2 PLAC Hair stylist
+1 RFN 144008906
+1 FAMS @F29@
+1 FAMC @F19@
+0 @I71@ INDI
+1 NAME Anne /Coligan/
+1 SEX F
+1 BIRT 
+2 DATE 15 SEP 1923
+2 PLAC Farnworth, BOLTON, Lancashire, England
+1 DEAT 
+2 DATE 1979
+2 PLAC Hope hospital
+1 BAPM 
+2 PLAC St Gragory's
+1 OCCU  
+2 PLAC Machinist
+1 RFN 144009155
+1 FAMS @F17@
+1 FAMS @F101@
+1 FAMC @F19@
+0 @I72@ INDI
+1 NAME Carol /York/
+1 SEX F
+1 BIRT 
+2 DATE 1955
+2 PLAC Haslingden, ROSSENDALE, Lancashire, England
+1 RFN 144023287
+1 FAMS @F5@
+0 @I228@ INDI
+1 NAME Honora Cecilia /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 24 APR 1923
+2 PLAC BURY Lancashire England
+1 RFN 144024377
+1 FAMS @F16@
+1 FAMC @F27@
+0 @I73@ INDI
+1 NAME Frank /Hilton/
+1 SEX M
+1 BIRT 
+2 DATE 1920
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 144024525
+1 FAMS @F16@
+0 @I74@ INDI
+1 NAME Anthony /Baker/
+1 SEX M
+1 BIRT 
+2 DATE 1950
+2 PLAC TONBRIDGE Kent England
+1 RFN 144026739
+1 FAMC @F21@
+0 @I75@ INDI
+1 NAME Michael /Harmer/
+1 SEX F
+1 BIRT 
+2 DATE 1930
+2 PLAC TONBRIDGE Kent England
+1 RFN 144026942
+1 FAMS @F20@
+1 FAMS @F99@
+1 FAMS @F100@
+1 FAMS @F100@
+0 @I76@ INDI
+1 NAME Pauline /Unknown/
+1 SEX F
+1 BIRT 
+2 DATE 1948
+2 PLAC TONBRIDGE Kent England
+1 RFN 144027156
+1 FAMC @F99@
+0 @I227@ INDI
+1 NAME Paul /Unknown/
+1 SEX M
+1 BIRT 
+2 DATE 1949
+2 PLAC TONBRIDGE Kent England
+1 RFN 144027218
+1 FAMC @F100@
+0 @I77@ INDI
+1 NAME John /Coligan/
+1 SEX M
+1 BIRT 
+2 DATE 1888
+2 PLAC BURY Lancashire England
+1 RFN 144044406
+1 FAMC @F18@
+0 @I78@ INDI
+1 NAME Thomas /Coligan/
+1 SEX M
+1 BIRT 
+2 DATE 1886
+2 PLAC BURY Lancashire England
+1 RFN 144044538
+1 FAMC @F18@
+0 @I79@ INDI
+1 NAME Matthew Owen /Abbott/
+1 SEX M
+1 BIRT 
+2 DATE 26 JUN 1926
+2 PLAC GLASGOW Lanarkshire Scotland
+1 OCCU  
+2 PLAC Office manager
+1 RFN 144045574
+1 FAMS @F29@
+0 @I80@ INDI
+1 NAME Elizabeth Betty /Cleary/
+1 SEX F
+1 BIRT 
+2 DATE 1905
+2 PLAC Dublin, Ireland
+1 DEAT 
+2 DATE 1976
+2 PLAC Bury
+1 RFN 144046041
+1 FAMC @F30@
+0 @I81@ INDI
+1 NAME  /(Father)/
+1 SEX M
+1 RFN 144046042
+1 FAMS @F30@
+0 @I82@ INDI
+1 NAME  /(Mother)/
+1 SEX F
+1 RFN 144046043
+1 FAMS @F30@
+0 @I83@ INDI
+1 NAME Jesse /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1826
+2 PLAC BURY Lancashire England
+1 RFN 144236647
+1 FAMS @F31@
+1 FAMC @F97@
+0 @I84@ INDI
+1 NAME Elizabeth /Parker/
+1 SEX F
+1 BIRT 
+2 DATE 1821
+2 PLAC BURY Lancashire England
+1 RFN 144236648
+1 FAMS @F31@
+0 @I85@ INDI
+1 NAME Eveline /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 13 FEB 1923
+2 PLAC BURY Lancashire England
+1 RFN 144259896
+1 FAMC @F25@
+0 @I226@ INDI
+1 NAME Thomas /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1883
+2 PLAC BURY Lancashire England
+1 RFN 144262125
+1 FAMC @F22@
+0 @I86@ INDI
+1 NAME Ada /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1880
+2 PLAC BURY Lancashire England
+1 RFN 144263601
+1 FAMC @F22@
+0 @I225@ INDI
+1 NAME Mary Ellen /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1876
+2 PLAC BURY Lancashire England
+1 RFN 144264136
+1 FAMC @F22@
+0 @I224@ INDI
+1 NAME Paul /Unknown/
+1 SEX M
+1 BIRT 
+2 DATE 1950
+2 PLAC TONBRIDGE Kent England
+1 RFN 144270425
+1 FAMC @F100@
+0 @I87@ INDI
+1 NAME Mark /o'Brien/
+1 SEX M
+1 BIRT 
+2 DATE 1978
+2 PLAC MANCHESTER Lancashire England
+1 RFN 144677595
+1 FAMS @F47@
+0 @I223@ INDI
+1 NAME Mary E /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1845
+2 PLAC BURY Lancashire England
+1 RFN 144746611
+1 FAMC @F31@
+0 @I88@ INDI
+1 NAME William /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1846
+2 PLAC BURY Lancashire England
+1 RFN 144746846
+1 FAMC @F31@
+0 @I89@ INDI
+1 NAME Thomas /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1848
+2 PLAC BURY Lancashire England
+1 RFN 144746968
+1 FAMC @F31@
+0 @I90@ INDI
+1 NAME Helen /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 24 JUL 1923
+2 PLAC Prestwich, England
+1 RFN 144749573
+1 FAMS @F50@
+1 FAMC @F26@
+0 @I91@ INDI
+1 NAME Bernard /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 29 OCT 1921
+2 PLAC SALFORD Lancashire England
+1 RFN 144749741
+1 FAMS @F48@
+1 FAMC @F26@
+0 @I92@ INDI
+1 NAME Mary /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 15 DEC 1919
+2 PLAC SALFORD Lancashire England
+1 RFN 144749914
+1 FAMS @F49@
+1 FAMC @F26@
+0 @I93@ INDI
+1 NAME Eamon /Corrigan/
+1 SEX M
+1 BIRT 
+2 DATE 1916
+2 PLAC Inniskillen, Ireland
+1 RFN 144750232
+1 FAMS @F49@
+0 @I94@ INDI
+1 NAME Margaret /Wellesby/
+1 SEX F
+1 BIRT 
+2 DATE 1920
+2 PLAC Prestwich, England
+1 RFN 144750378
+1 FAMS @F48@
+0 @I95@ INDI
+1 NAME Alfred /Clarke/
+1 SEX M
+1 BIRT 
+2 DATE 1920
+2 PLAC MANCHESTER Lancashire England
+1 RFN 144750525
+1 FAMS @F50@
+0 @I96@ INDI
+1 NAME Francis Robert /Devitt/
+1 SEX M
+1 BIRT 
+2 DATE 1923
+2 PLAC Farnworth, BOLTON, Lancashire, England
+1 DEAT 
+2 DATE 1975
+2 PLAC Blackburn Royal Hospital
+1 OCCU  
+2 PLAC Wood machinist
+1 RFN 144841214
+1 FAMS @F17@
+1 FAMS @F101@
+0 @I97@ INDI
+1 NAME Kathleen Anne /Devitt/
+1 SEX F
+1 BIRT 
+2 DATE 14 JAN 1946
+2 PLAC Farnworth, BOLTON, Lancashire, England
+1 DEAT 
+2 DATE 3 FEB 2001
+2 PLAC St Joseph's Little Hulton
+1 BAPM 
+2 PLAC St Edmund's
+1 OCCU  
+2 PLAC Nurse/Sister
+1 RFN 144842342
+1 FAMS @F72@
+1 FAMS @F74@
+1 FAMC @F101@
+0 @I98@ INDI
+1 NAME Margaret Patricia /Devitt/
+1 SEX F
+1 BIRT 
+2 DATE 4 DEC 1950
+2 PLAC Walkden, BOLTON, Lancashire, England
+1 OCCU  
+2 PLAC Bank official
+1 RFN 144843184
+1 FAMS @F54@
+1 FAMS @F55@
+1 FAMC @F101@
+0 @I99@ INDI
+1 NAME Derek /Smith/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC WARRINGTON Cheshire England
+1 RFN 144843626
+1 FAMS @F32@
+0 @I100@ INDI
+1 NAME Pam /(Mother)/
+1 SEX F
+1 BIRT 
+2 DATE 1946
+2 PLAC WARRINGTON Cheshire England
+1 RFN 144843628
+1 FAMS @F32@
+0 @I101@ INDI
+1 NAME Gemma /Smith/
+1 SEX F
+1 BIRT 
+2 DATE 1988
+2 PLAC WARRINGTON Cheshire England
+1 RFN 144845791
+1 FAMC @F32@
+0 @I102@ INDI
+1 NAME John /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 20 OCT 1880
+2 PLAC Stacksteads, Nr. Bacup, BURY, Lancashire, England
+1 DEAT 
+2 DATE 11 MAR 1959
+2 PLAC Ramsbottom
+1 RFN 145022881
+1 FAMS @F53@
+1 FAMC @F33@
+0 @I103@ INDI
+1 NAME Betsy Ann /Dawson/
+1 SEX F
+1 BIRT 
+2 DATE 1883
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 30 AUG 1922
+2 PLAC Ramsbottom
+1 RFN 145022882
+1 FAMS @F53@
+0 @I104@ INDI
+1 NAME William /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1840
+2 PLAC BURY Lancashire England
+1 DEAT 
+2 DATE 1892
+1 RFN 145023094
+1 FAMS @F33@
+1 FAMC @F52@
+0 @I105@ INDI
+1 NAME Alice /Robinson/
+1 SEX F
+1 BIRT 
+2 DATE 1840
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145023095
+1 FAMS @F33@
+0 @I106@ INDI
+1 NAME William Cox /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1889
+2 PLAC WARRINGTON Cheshire England
+1 RFN 145024327
+1 FAMS @F51@
+0 @I107@ INDI
+1 NAME Elizabeth Alice /Cliffe/
+1 SEX F
+1 BIRT 
+2 DATE 1893
+2 PLAC Whitley, Cheshire England, WARRINGTON
+1 RFN 145024328
+1 FAMS @F51@
+0 @I108@ INDI
+1 NAME Thomas /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1876
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 21 JUL 1880
+2 PLAC Bacup
+1 RFN 145239578
+1 FAMC @F33@
+0 @I109@ INDI
+1 NAME Robert /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1877
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 26 DEC 1861
+2 PLAC Bacup
+1 SOUR gravestone - Bacup cemetry
+1 RFN 145239785
+1 FAMC @F33@
+0 @I110@ INDI
+1 NAME James /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1856
+2 PLAC BACUP Lancashire England
+1 RFN 145240009
+1 FAMC @F33@
+0 @I111@ INDI
+1 NAME William /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1873
+2 PLAC BACUP Lancashire England
+1 RFN 145240172
+1 FAMC @F33@
+0 @I112@ INDI
+1 NAME Lawrence /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1873
+2 PLAC BACUP Lancashire England
+1 RFN 145240268
+1 FAMC @F33@
+0 @I222@ INDI
+1 NAME Fred /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1866
+2 PLAC BACUP Lancashire England
+1 RFN 145240368
+1 FAMC @F33@
+0 @I113@ INDI
+1 NAME Walter /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1860
+2 PLAC BACUP Lancashire England
+1 RFN 145240554
+1 FAMC @F33@
+0 @I114@ INDI
+1 NAME Albert /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1860
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145240697
+1 FAMC @F33@
+0 @I115@ INDI
+1 NAME Paul /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1826
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 1826
+1 NOTE Died aged 2 days old
+1 RFN 145243135
+1 FAMC @F52@
+0 @I116@ INDI
+1 NAME Lawrence /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 9 JUL 1806
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 1 MAR 1868
+2 PLAC Bacup
+1 RFN 145243136
+1 FAMS @F52@
+0 @I117@ INDI
+1 NAME Alice /Aked/
+1 SEX F
+1 BIRT 
+2 DATE 1804
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 25 JAN 1871
+1 RFN 145243137
+1 FAMS @F52@
+1 FAMC @F39@
+0 @I118@ INDI
+1 NAME Elizabeth /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1828
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145244373
+1 FAMC @F52@
+0 @I119@ INDI
+1 NAME John /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1830
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 30 JAN 1850
+2 PLAC Bacup
+1 SOUR gravestone - St. John's, Bacup
+1 RFN 145244497
+1 FAMC @F52@
+0 @I120@ INDI
+1 NAME Alice /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1832
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145244613
+1 FAMC @F52@
+0 @I121@ INDI
+1 NAME James /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1834
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145244754
+1 FAMC @F52@
+0 @I122@ INDI
+1 NAME Myles /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1835
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145244865
+1 FAMC @F52@
+0 @I221@ INDI
+1 NAME Lawrence /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1836
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 1837
+2 PLAC Bacup
+1 NOTE Died aged 9 months only
+1 SOUR gravestone - St. John's, Bacup
+1 RFN 145245067
+1 FAMC @F52@
+0 @I123@ INDI
+1 NAME Mary /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1843
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 20 OCT 1895
+2 PLAC Bacup
+1 SOUR gravestone - St. John's, Bacup
+1 RFN 145245226
+1 FAMC @F52@
+0 @I124@ INDI
+1 NAME Edith /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 27 MAY 1908
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145246953
+1 FAMS @F34@
+1 FAMC @F53@
+0 @I125@ INDI
+1 NAME Jack /Berry/
+1 SEX M
+1 BIRT 
+2 DATE 1904
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145247084
+1 FAMS @F34@
+0 @I188@ INDI
+1 NAME Elizabeth /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1906
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145247198
+1 FAMS @F35@
+1 FAMC @F53@
+0 @I176@ INDI
+1 NAME Daniel /Harman/
+1 SEX M
+1 BIRT 
+2 DATE 1906
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145247309
+1 FAMS @F35@
+0 @I126@ INDI
+1 NAME Jack /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 29 MAY 1920
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145247696
+1 FAMS @F36@
+1 FAMC @F53@
+0 @I127@ INDI
+1 NAME Norman /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1 AUG 1922
+2 PLAC Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 1991
+1 RFN 145247886
+1 FAMS @F37@
+1 FAMC @F53@
+0 @I128@ INDI
+1 NAME Jack /Berry/
+1 SEX M
+1 BIRT 
+2 DATE 1925
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248368
+1 FAMC @F34@
+0 @I129@ INDI
+1 NAME Joan /Berry/
+1 SEX F
+1 BIRT 
+2 DATE 1927
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248473
+1 FAMC @F34@
+0 @I130@ INDI
+1 NAME Marjorie /Berry/
+1 SEX F
+1 BIRT 
+2 DATE 1928
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248561
+1 FAMC @F34@
+0 @I131@ INDI
+1 NAME Rene /Berry/
+1 SEX F
+1 BIRT 
+2 DATE 1930
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248632
+1 FAMC @F34@
+0 @I132@ INDI
+1 NAME Audrey /Berry/
+1 SEX M
+1 BIRT 
+2 DATE 1932
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248714
+1 FAMC @F34@
+0 @I174@ INDI
+1 NAME Eva /Harman/
+1 SEX F
+1 BIRT 
+2 DATE 1926
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145248911
+1 FAMC @F35@
+0 @I173@ INDI
+1 NAME Daniel /Harman/
+1 SEX M
+1 BIRT 
+2 DATE 1927
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249036
+1 FAMC @F35@
+0 @I171@ INDI
+1 NAME Jack /Harman/
+1 SEX M
+1 BIRT 
+2 DATE 1928
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249139
+1 FAMC @F35@
+0 @I133@ INDI
+1 NAME Edith /Harman/
+1 SEX F
+1 BIRT 
+2 DATE 1929
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249248
+1 FAMC @F35@
+0 @I169@ INDI
+1 NAME Samuel /Harman/
+1 SEX M
+1 BIRT 
+2 DATE 1930
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249327
+1 FAMC @F35@
+0 @I162@ INDI
+1 NAME Glynn /Harman/
+1 SEX M
+1 BIRT 
+2 DATE 1931
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249427
+1 FAMC @F35@
+0 @I161@ INDI
+1 NAME Gwen /McGregor/
+1 SEX F
+1 BIRT 
+2 DATE 1908
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249665
+1 FAMS @F36@
+0 @I134@ INDI
+1 NAME Betty /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1928
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145249830
+1 FAMS @F38@
+1 FAMC @F36@
+0 @I159@ INDI
+1 NAME Kenneth /Whitworth/
+1 SEX M
+1 BIRT 
+2 DATE 1928
+2 PLAC Ramsbottom, Leicestershire, England
+1 RFN 145249998
+1 FAMS @F38@
+0 @I157@ INDI
+1 NAME Anita /Whitworth/
+1 SEX F
+1 BIRT 
+2 DATE 1948
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145250159
+1 FAMC @F38@
+0 @I150@ INDI
+1 NAME Carla /Whitworth/
+1 SEX F
+1 BIRT 
+2 DATE 1950
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145250260
+1 FAMC @F38@
+0 @I135@ INDI
+1 NAME Monica /Chapman/
+1 SEX F
+1 BIRT 
+2 DATE 1910
+2 PLAC BACUP Lancashire England
+1 RFN 145250419
+1 FAMS @F37@
+0 @I149@ INDI
+1 NAME Philip /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1930
+2 PLAC Bacup, Lancashire, England
+1 RFN 145250549
+1 FAMC @F37@
+0 @I136@ INDI
+1 NAME Roger /Ashworth/
+1 SEX M
+1 BIRT 
+2 DATE 1932
+2 PLAC BACUP Lancashire England
+1 RFN 145250623
+1 FAMC @F37@
+0 @I144@ INDI
+1 NAME Gail /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1934
+2 PLAC BACUP Lancashire England
+1 RFN 145250717
+1 FAMC @F37@
+0 @I137@ INDI
+1 NAME Elizabeth /Aked/
+1 SEX F
+1 BIRT 
+2 DATE 1802
+2 PLAC BACUP Lancashire England
+1 RFN 145272733
+1 FAMS @F40@
+1 FAMC @F39@
+0 @I138@ INDI
+1 NAME John /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1770
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 10 NOV 1830
+1 RFN 145272734
+1 FAMS @F39@
+0 @I139@ INDI
+1 NAME Betty /Lord/
+1 SEX F
+1 BIRT 
+2 DATE 1770
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 10 AUG 1810
+1 RFN 145272735
+1 FAMS @F39@
+0 @I140@ INDI
+1 NAME Lawrence /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1786
+2 PLAC BACUP Lancashire England
+1 RFN 145273452
+1 FAMS @F40@
+1 FAMC @F95@
+0 @I143@ INDI
+1 NAME Jonathan /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1800
+2 PLAC BACUP Lancashire England
+1 RFN 145273657
+1 FAMC @F39@
+0 @I141@ INDI
+1 NAME William /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1797
+2 PLAC BACUP Lancashire England
+1 RFN 145273744
+1 FAMC @F39@
+0 @I142@ INDI
+1 NAME James /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1795
+2 PLAC BACUP Lancashire England
+1 RFN 145273847
+1 FAMC @F39@
+0 @I231@ INDI
+1 NAME John /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1794
+2 PLAC BACUP Lancashire England
+1 RFN 145273958
+1 FAMC @F39@
+0 @I232@ INDI
+1 NAME Anne /Aked/
+1 SEX F
+1 BIRT 
+2 DATE 1792
+2 PLAC BACUP Lancashire England
+1 RFN 145274086
+1 FAMS @F41@
+1 FAMC @F39@
+0 @I145@ INDI
+1 NAME William /Aked/
+1 SEX M
+1 BIRT 
+2 DATE 1790
+2 PLAC BACUP Lancashire England
+1 RFN 145274164
+1 FAMC @F39@
+0 @I146@ INDI
+1 NAME John /Taylor/
+1 SEX M
+1 BIRT 
+2 DATE 1792
+2 PLAC BACUP Lancashire England
+1 RFN 145277162
+1 FAMS @F41@
+0 @I147@ INDI
+1 NAME Edwin /Rogers/
+1 SEX M
+1 BIRT 
+2 DATE 1877
+2 PLAC Holcombe, Lancashire, England
+1 DEAT 
+2 DATE 1 OCT 1961
+1 NOTE Born Ivy Terrace, Lumb Carr Rd. Holcombe, Nr Ramsbottom
+1 RFN 145278763
+1 FAMS @F42@
+1 FAMC @F64@
+0 @I148@ INDI
+1 NAME Margaret /Lomax/
+1 SEX F
+1 BIRT 
+2 DATE 11 SEP 1878
+2 PLAC Summerseat, Nr. Bury, Lancashire, England
+1 RFN 145278764
+1 FAMS @F42@
+1 FAMC @F65@
+0 @I233@ INDI
+1 NAME Ann /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 25 OCT 1905
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145280332
+1 FAMC @F42@
+0 @I234@ INDI
+1 NAME Margery /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 2 JUN 1916
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145280450
+1 FAMC @F42@
+0 @I151@ INDI
+1 NAME Ellen Emily /Lawlor/
+1 SEX F
+1 BIRT 
+2 DATE 1880
+2 PLAC Abbeyleix, Laois, Ireland
+1 RFN 145286116
+1 FAMS @F43@
+0 @I152@ INDI
+1 NAME James /Brazil/
+1 SEX M
+1 BIRT 
+2 DATE 1880
+2 PLAC Abbeyleix, Laois, Ireland
+1 RFN 145286118
+1 FAMS @F43@
+0 @I153@ INDI
+1 NAME Michael /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 22 APR 1864
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 16 MAR 1924
+2 PLAC Salford
+1 RFN 145288120
+1 FAMS @F44@
+1 FAMC @F45@
+0 @I154@ INDI
+1 NAME Mary /Cox/
+1 SEX F
+1 BIRT 
+2 DATE 1865
+2 PLAC MAGHERAFELT County Londonderry Northern Ireland
+1 DEAT 
+2 DATE 22 FEB 1940
+2 PLAC Salford
+1 RFN 145288121
+1 FAMS @F44@
+1 FAMC @F87@
+0 @I155@ INDI
+1 NAME Elizabeth /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 10 SEP 1884
+2 PLAC SALFORD Lancashire England
+1 DEAT 
+2 DATE 24 MAY 1885
+1 RFN 145288784
+1 FAMC @F44@
+0 @I156@ INDI
+1 NAME James /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 3 FEB 1886
+2 PLAC SALFORD Lancashire England
+1 RFN 145288939
+1 FAMC @F44@
+0 @I235@ INDI
+1 NAME John /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 7 APR 1890
+2 PLAC SALFORD Lancashire England
+1 RFN 145289078
+1 FAMC @F44@
+0 @I158@ INDI
+1 NAME Michael /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 25 JAN 1892
+2 PLAC SALFORD Lancashire England
+1 NOTE Born at 16 North Cable St. Salford
+1 RFN 145289233
+1 FAMC @F44@
+0 @I236@ INDI
+1 NAME John Henry /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 18 DEC 1895
+2 PLAC SALFORD Lancashire England
+1 DEAT 
+2 DATE 1897
+1 RFN 145289341
+1 FAMC @F44@
+0 @I160@ INDI
+1 NAME Joseph /Brazil/
+1 SEX M
+1 BIRT 
+2 DATE 1898
+2 PLAC Unknown, Lancashire, England
+1 RFN 145289911
+1 FAMC @F43@
+0 @I237@ INDI
+1 NAME Annie /Brazil/
+1 SEX F
+1 BIRT 
+2 DATE 1902
+2 PLAC Unknown, Lancashire, England
+1 RFN 145290014
+1 FAMC @F43@
+0 @I238@ INDI
+1 NAME Agnes /Brazil/
+1 SEX F
+1 BIRT 
+2 DATE 1903
+2 PLAC Unknown, Lancashire, England
+1 RFN 145290135
+1 FAMC @F43@
+0 @I163@ INDI
+1 NAME James /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 18 JUN 1830
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 20 DEC 1937
+2 PLAC Salford
+1 RFN 145294225
+1 FAMS @F45@
+1 FAMS @F46@
+0 @I164@ INDI
+1 NAME Elizabeth /Kelly/
+1 SEX F
+1 BIRT 
+2 DATE 1831
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 15 DEC 1868
+1 RFN 145294226
+1 FAMS @F45@
+0 @I165@ INDI
+1 NAME Mary Anna /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 14 NOV 1897
+2 PLAC SALFORD Lancashire England
+1 DEAT 
+2 DATE 9 JAN 1954
+1 RFN 145296621
+1 FAMC @F44@
+0 @I166@ INDI
+1 NAME Margaret /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 1900
+2 PLAC SALFORD Lancashire England
+1 RFN 145296848
+1 FAMC @F44@
+0 @I167@ INDI
+1 NAME Sarah /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 13 MAR 1901
+2 PLAC SALFORD Lancashire England
+1 RFN 145297000
+1 FAMC @F44@
+0 @I168@ INDI
+1 NAME Margaret /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 9 AUG 1853
+2 PLAC Unknown, Laois, Ireland
+1 RFN 145299257
+1 FAMC @F45@
+0 @I239@ INDI
+1 NAME Maria /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 7 MAR 1856
+2 PLAC Unknown, Laois, Ireland
+1 RFN 145299361
+1 FAMC @F45@
+0 @I170@ INDI
+1 NAME Elizabeth Jane /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 17 AUG 1858
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 7 JUL 1931
+2 PLAC Salford
+1 RFN 145299495
+1 FAMC @F45@
+0 @I240@ INDI
+1 NAME Henry /Slattery/
+1 SEX M
+1 BIRT 
+2 DATE 1 NOV 1860
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 21 APR 1862
+1 RFN 145299633
+1 FAMC @F45@
+0 @I172@ INDI
+1 NAME Ellen /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 25 MAR 1863
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 1863
+1 NOTE Ellen lived for only 2 months
+1 RFN 145299761
+1 FAMC @F45@
+0 @I241@ INDI
+1 NAME Sarah /Cosgrove/
+1 SEX F
+1 BIRT 
+2 DATE 1830
+2 PLAC Unknown, Laois, Ireland
+1 RFN 145300276
+1 FAMS @F46@
+0 @I242@ INDI
+1 NAME Catherine /Slattery/
+1 SEX F
+1 BIRT 
+2 DATE 14 JAN 1876
+2 PLAC Unknown, Laois, Ireland
+1 DEAT 
+2 DATE 18 AUG 1883
+1 RFN 145300434
+1 FAMC @F46@
+0 @I175@ INDI
+1 NAME Margaret /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 23 JUL 1904
+2 PLAC Ramsbottom, Lancashire, England
+1 RFN 145309459
+1 FAMC @F42@
+0 @I243@ INDI
+1 NAME Edwin /Rogers/
+1 SEX M
+1 BIRT 
+2 DATE 1845
+2 PLAC Fulbrook, Burford, Oxfordshire, England
+1 DEAT 
+2 DATE 27 FEB 1892
+1 NOTE Cotswold builder by trade
+2 CONT Had 10 children in total but only 5 found so far
+2 CONT Died aged 49 from stone dust
+1 RFN 145319338
+1 FAMS @F64@
+1 FAMC @F78@
+0 @I177@ INDI
+1 NAME Margery /Fairbrother/
+1 SEX F
+1 BIRT 
+2 DATE 14 MAY 1845
+2 PLAC Holcombe, Nr. Ramsbottom, Lancashire, England
+1 DEAT 
+2 DATE 27 MAR 1928
+1 OCCU  
+2 PLAC Handloom weaver
+1 RFN 145319339
+1 FAMS @F64@
+0 @I178@ INDI
+1 NAME Margaret /Stewart/
+1 SEX F
+1 BIRT 
+2 DATE 1858
+2 PLAC DINGWALL Ross-Shire Scotland
+1 RFN 145486270
+1 FAMS @F65@
+0 @I179@ INDI
+1 NAME Sergeant /Reid/
+1 SEX M
+1 BIRT 
+2 DATE 1858
+2 PLAC Unknown, Ross-Shire, Scotland
+1 RFN 145486271
+1 FAMS @F65@
+0 @I180@ INDI
+1 NAME Sarah Ann /Ashworth/
+1 SEX F
+1 BIRT 
+2 DATE 1862
+2 PLAC BACUP Lancashire England
+1 DEAT 
+2 DATE 23 SEP 1864
+2 PLAC Bacup
+1 SOUR Gravestone - Bacup cemetry
+1 RFN 145488413
+1 FAMC @F33@
+0 @I181@ INDI
+1 NAME James /Rogers/
+1 SEX M
+1 BIRT 
+2 DATE 1876
+2 PLAC Holcombe, Lancashire, England
+1 RFN 145495411
+1 FAMC @F64@
+0 @I182@ INDI
+1 NAME Alice /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 1877
+2 PLAC Holcombe, Lancashire, England
+1 RFN 145495530
+1 FAMC @F64@
+0 @I183@ INDI
+1 NAME Lucy /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 1875
+2 PLAC Holcombe, Lancashire, England
+1 RFN 145495602
+1 FAMC @F64@
+0 @I184@ INDI
+1 NAME Ellen /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 1874
+2 PLAC Holcombe, Lancashire, England
+1 RFN 145495678
+1 FAMC @F64@
+0 @I185@ INDI
+1 NAME Daniel /Rogers/
+1 SEX M
+1 BIRT 
+2 DATE 1843
+2 PLAC BURFORD Oxfordshire England
+1 RFN 145512265
+1 FAMC @F78@
+0 @I186@ INDI
+1 NAME  /(Father)/
+1 SEX M
+1 RFN 145512266
+1 FAMS @F78@
+0 @I187@ INDI
+1 NAME  /(Mother)/
+1 SEX F
+1 RFN 145512267
+1 FAMS @F78@
+0 @I244@ INDI
+1 NAME Sister /Rogers/
+1 SEX F
+1 BIRT 
+2 DATE 1840
+2 PLAC BURFORD Oxfordshire England
+1 RFN 145512356
+1 FAMC @F78@
+0 @I189@ INDI
+1 NAME Margaret 'Maggie' /Cleary/
+1 SEX M
+1 BIRT 
+2 DATE 1910
+2 PLAC Unknown, Laois, Ireland
+1 NOTE emigrated to New Zealand in the 1960's ?
+1 RFN 151297459
+1 FAMC @F30@
+0 @I190@ INDI
+1 NAME Maurice /Wilson/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC Farnworth?, Greater Manchester, England
+1 RFN 151752451
+1 FAMS @F72@
+0 @I191@ INDI
+1 NAME Alan /Hargreaves/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC Farnworth?, Greater Manchester, England
+1 RFN 151752771
+1 FAMS @F74@
+0 @I192@ INDI
+1 NAME John /Wilson/
+1 SEX M
+1 BIRT 
+2 DATE 1969
+2 PLAC Farnworth, Greater Manchester, England
+1 RFN 151753062
+1 FAMC @F72@
+0 @I193@ INDI
+1 NAME Nina /Wilson/
+1 SEX F
+1 BIRT 
+2 DATE 1972
+2 PLAC Farnworth, Greater Manchester, England
+1 RFN 151753176
+1 FAMC @F72@
+0 @I194@ INDI
+1 NAME David /Tatlock/
+1 SEX M
+1 BIRT 
+2 DATE 1950
+2 PLAC BOLTON Lancashire England
+1 DEAT 
+2 DATE 1999
+2 PLAC Litchfield
+1 RFN 151758789
+1 FAMS @F54@
+0 @I195@ INDI
+1 NAME Rachael /Tatlock/
+1 SEX F
+1 BIRT 
+2 DATE 1981
+2 PLAC BOLTON Lancashire England
+1 RFN 151759007
+1 FAMC @F54@
+0 @I196@ INDI
+1 NAME Douglas /Haynes/
+1 SEX M
+1 BIRT 
+2 DATE 1950
+2 PLAC BOLTON Lancashire England
+1 RFN 151761628
+1 FAMS @F55@
+0 @I197@ INDI
+1 NAME Jean Mary /Abbott/
+1 SEX F
+1 BIRT 
+2 DATE 1954
+2 PLAC BOLTON Lancashire England
+1 RFN 151832732
+1 FAMS @F56@
+1 FAMC @F29@
+0 @I198@ INDI
+1 NAME Paul /Harris/
+1 SEX M
+1 BIRT 
+2 DATE 1951
+2 PLAC SALFORD Lancashire England
+1 RFN 151833853
+1 FAMS @F56@
+0 @I199@ INDI
+1 NAME Colin Ian /Harris/
+1 SEX M
+1 BIRT 
+2 DATE 1974
+2 PLAC BOLTON Lancashire England
+1 RFN 151834102
+1 FAMC @F56@
+0 @I200@ INDI
+1 NAME Stephen Paul /Harris/
+1 SEX M
+1 BIRT 
+2 DATE 1979
+2 PLAC SALFORD Lancashire England
+1 RFN 151834353
+1 FAMS @F75@
+1 FAMC @F56@
+0 @I201@ INDI
+1 NAME Kathryn /Quinn/
+1 SEX F
+1 BIRT 
+2 DATE 1980
+2 PLAC BOLTON Lancashire England
+1 RFN 151834696
+1 FAMS @F75@
+0 @I202@ INDI
+1 NAME Iain Joseph /Abbott/
+1 SEX M
+1 BIRT 
+2 DATE 4 DEC 1952
+2 PLAC BOLTON Lancashire England
+1 DEAT 
+2 DATE 4 DEC 1952
+2 PLAC Townley's hospital, Bolton
+1 RFN 153165735
+1 FAMC @F29@
+0 @I203@ INDI
+1 NAME Lawrencina /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 22 OCT 1821
+2 PLAC ?, England
+1 BAPM 
+2 DATE 23 JAN 1825
+1 RFN 168417844
+1 FAMS @F60@
+1 FAMC @F40@
+0 @I204@ INDI
+1 NAME Peter George /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1823
+2 PLAC west derby, Liverpool, England
+1 RFN 168418737
+1 FAMS @F57@
+1 FAMC @F40@
+0 @I205@ INDI
+1 NAME John /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1824
+2 PLAC West Derby, Liverpool, England
+1 RFN 168419301
+1 FAMS @F58@
+1 FAMC @F40@
+0 @I206@ INDI
+1 NAME Elizabeth /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1825
+2 PLAC West Derby Liverpool, England
+1 RFN 168419557
+1 FAMC @F40@
+0 @I207@ INDI
+1 NAME James Ormerod /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1827
+2 PLAC ?, England
+1 RFN 168419882
+1 FAMS @F59@
+1 FAMC @F40@
+0 @I208@ INDI
+1 NAME Lawrence /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1831
+2 PLAC West Derby, Liverpool, England
+1 RFN 168420288
+1 FAMS @F76@
+1 FAMC @F40@
+0 @I209@ INDI
+1 NAME Richard /Potter/
+1 SEX M
+1 BIRT 
+2 DATE 1817
+2 PLAC ?, England
+1 RFN 168420761
+1 FAMS @F60@
+0 @I210@ INDI
+1 NAME Lawrencina /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1845
+2 PLAC ?, England
+1 RFN 168421438
+1 FAMS @F77@
+1 FAMC @F60@
+0 @I211@ INDI
+1 NAME Catherine /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1847
+2 PLAC ?, England
+1 RFN 168421690
+1 FAMS @F61@
+1 FAMC @F60@
+0 @I212@ INDI
+1 NAME Marry /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1849
+2 PLAC ?, England
+1 RFN 168421871
+1 FAMS @F62@
+1 FAMC @F60@
+0 @I213@ INDI
+1 NAME Georgina /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1850
+2 PLAC ?, England
+1 RFN 168422059
+1 FAMS @F66@
+1 FAMC @F60@
+0 @I214@ INDI
+1 NAME Blanche /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1851
+2 PLAC ?, England
+1 RFN 168422380
+1 FAMS @F67@
+1 FAMC @F60@
+0 @I215@ INDI
+1 NAME Theresa /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1852
+2 PLAC ?, England
+1 RFN 168422586
+1 FAMS @F68@
+1 FAMC @F60@
+0 @I216@ INDI
+1 NAME Margaret H /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1854
+2 PLAC Standish, Gloucestershire, England
+1 RFN 168422975
+1 FAMS @F69@
+1 FAMC @F60@
+0 @I217@ INDI
+1 NAME Martha Beatrice /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1858
+2 PLAC Standish House, Gloucestershire, England
+1 RFN 168423309
+1 FAMS @F70@
+1 FAMC @F60@
+0 @I218@ INDI
+1 NAME Richard /Potter/
+1 SEX M
+1 BIRT 
+2 DATE 1862
+2 PLAC ?, England
+1 RFN 168423514
+1 FAMC @F60@
+0 @I219@ INDI
+1 NAME Rosalind /Potter/
+1 SEX F
+1 BIRT 
+2 DATE 1865
+2 PLAC ?, England
+1 RFN 168423872
+1 FAMS @F71@
+1 FAMS @F73@
+1 FAMC @F60@
+0 @I220@ INDI
+1 NAME Robert Durning /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1832
+2 PLAC ?, England
+1 RFN 168424355
+1 FAMS @F77@
+0 @I245@ INDI
+1 NAME Richard /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1868
+2 PLAC ?, England
+1 RFN 168424605
+1 FAMC @F77@
+0 @I246@ INDI
+1 NAME Catherine /Holt/
+1 SEX F
+1 BIRT 
+2 DATE 1871
+2 PLAC ?, England
+1 RFN 168424823
+1 FAMC @F77@
+0 @I247@ INDI
+1 NAME Robert /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1872
+2 PLAC ?, England
+1 RFN 168425045
+1 FAMC @F77@
+0 @I248@ INDI
+1 NAME Elizabeth /Holt/
+1 SEX F
+1 BIRT 
+2 DATE 1875
+2 PLAC ?, England
+1 RFN 168425243
+1 FAMC @F77@
+0 @I249@ INDI
+1 NAME Philip /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1876
+2 PLAC ?, England
+1 RFN 168425379
+1 FAMC @F77@
+0 @I250@ INDI
+1 NAME Edward /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1878
+2 PLAC ?, England
+1 RFN 168425525
+1 FAMC @F77@
+0 @I251@ INDI
+1 NAME Mary /Holt/
+1 SEX F
+1 BIRT 
+2 DATE 1880
+2 PLAC ?, England
+1 RFN 168425904
+1 FAMC @F77@
+0 @I252@ INDI
+1 NAME Lawrence /Holt/
+1 SEX M
+1 BIRT 
+2 DATE 1882
+2 PLAC ?, England
+1 RFN 168426131
+1 FAMC @F77@
+0 @I253@ INDI
+1 NAME Leonard Henry /Courtney/
+1 SEX M
+1 BIRT 
+2 DATE 1832
+2 PLAC ?, England
+1 RFN 168426752
+1 FAMS @F61@
+0 @I254@ INDI
+1 NAME Arthur /Playne/
+1 SEX M
+1 BIRT 
+2 DATE 1845
+2 PLAC ?, England
+1 RFN 168426980
+1 FAMS @F62@
+0 @I255@ INDI
+1 NAME William /Playne/
+1 SEX M
+1 BIRT 
+2 DATE 1870
+2 PLAC ?, England
+1 RFN 168427213
+1 FAMS @F63@
+1 FAMC @F62@
+0 @I256@ INDI
+1 NAME Manuella /Meinertzhagen/
+1 SEX F
+1 BIRT 
+2 DATE 1871
+2 PLAC ?, England
+1 RFN 168427533
+1 FAMS @F63@
+0 @I257@ INDI
+1 NAME Daniel /Meinertzhagen/
+1 SEX M
+1 BIRT 
+2 DATE 1842
+2 PLAC ?, England
+1 RFN 168427916
+1 FAMS @F66@
+0 @I258@ INDI
+1 NAME William Harrison /Cripps/
+1 SEX M
+1 BIRT 
+2 DATE 1850
+2 PLAC ?, England
+1 RFN 168428259
+1 FAMS @F67@
+0 @I259@ INDI
+1 NAME Charles Alfred /Cripps/
+1 SEX M
+1 BIRT 
+2 DATE 1852
+2 PLAC ?, England
+1 RFN 168428597
+1 FAMS @F68@
+0 @I260@ INDI
+1 NAME Henry /Hobhouse/
+1 SEX M
+1 BIRT 
+2 DATE 1854
+2 PLAC North Cadbury, Somerset, England
+1 RFN 168429023
+1 FAMS @F69@
+0 @I261@ INDI
+1 NAME Sidney James /Webb/
+1 SEX M
+1 BIRT 
+2 DATE 1859
+2 PLAC Cranbourn St. Leicester Sq, London, England
+1 RFN 168429471
+1 FAMS @F70@
+0 @I262@ INDI
+1 NAME George Cumberland /Dobbs/
+1 SEX M
+1 BIRT 
+2 DATE 1869
+2 PLAC ?, England
+1 RFN 168429807
+1 FAMS @F71@
+0 @I263@ INDI
+1 NAME Arthur Dyson /Williams/
+1 SEX M
+1 BIRT 
+2 DATE 1859
+2 PLAC ?, England
+1 RFN 168430116
+1 FAMS @F73@
+0 @I264@ INDI
+1 NAME Georgina /Bevan/
+1 SEX F
+1 BIRT 
+2 DATE 1832
+2 PLAC LIVERPOOL Merseyside England
+1 RFN 168430515
+1 FAMS @F57@
+0 @I265@ INDI
+1 NAME Emily /(Unknown)/
+1 SEX F
+1 BIRT 
+2 DATE 1833
+2 PLAC GLOUCESTER Gloucestershire England
+1 RFN 168430815
+1 FAMS @F58@
+0 @I266@ INDI
+1 NAME Julia /Diamond/
+1 SEX F
+1 BIRT 
+2 DATE 1827
+2 PLAC ?, England
+1 RFN 168431207
+1 FAMS @F59@
+0 @I267@ INDI
+1 NAME Rosina Kate /Mortimer/
+1 SEX F
+1 BIRT 
+2 DATE 1845
+2 PLAC Madras, India
+1 RFN 168431496
+1 FAMS @F76@
+0 @I268@ INDI
+1 NAME John /Cox/
+1 SEX M
+1 BIRT 
+2 DATE 1835
+2 PLAC Ireland
+1 RFN 180151120
+1 FAMS @F87@
+0 @I269@ INDI
+1 NAME Annie /Neil/
+1 SEX F
+1 BIRT 
+2 DATE 1835
+2 PLAC GLASGOW Lanarkshire Scotland
+1 RFN 180151121
+1 FAMS @F87@
+0 @I270@ INDI
+1 NAME Helena Elsie /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1893
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180217071
+1 FAMS @F88@
+1 FAMC @F90@
+0 @I271@ INDI
+1 NAME Thomas /Craven/
+1 SEX M
+1 BIRT 
+2 DATE 1893
+2 PLAC Unknown, Derbyshire, England
+1 RFN 180217072
+1 FAMS @F88@
+0 @I272@ INDI
+1 NAME Edna /Beswick/
+1 SEX F
+1 BIRT 
+2 DATE 1926
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180227278
+1 FAMC @F51@
+0 @I273@ INDI
+1 NAME Frank /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1940
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180227760
+1 FAMC @F51@
+0 @I274@ INDI
+1 NAME Margaret /Beswick/
+1 SEX F
+1 BIRT 
+2 DATE 1917
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180228372
+1 FAMC @F51@
+0 @I275@ INDI
+1 NAME William /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1916
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180228833
+1 FAMC @F51@
+0 @I350@ INDI
+1 NAME Fred /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1930
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180229578
+1 FAMC @F51@
+0 @I276@ INDI
+1 NAME Alan /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1927
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180229768
+1 FAMC @F51@
+0 @I277@ INDI
+1 NAME Arthur /Beswick/
+1 SEX M
+1 BIRT 
+2 DATE 1920
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180230947
+1 FAMC @F51@
+0 @I349@ INDI
+1 NAME Vera /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1926
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180249930
+1 FAMS @F83@
+1 FAMC @F88@
+0 @I278@ INDI
+1 NAME Amy /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1930
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180250020
+1 FAMS @F82@
+1 FAMC @F88@
+0 @I279@ INDI
+1 NAME Geofrey /Craven/
+1 SEX M
+1 BIRT 
+2 DATE 1932
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180250065
+1 FAMS @F89@
+1 FAMC @F88@
+0 @I348@ INDI
+1 NAME Henry William /Craven/
+1 SEX M
+1 BIRT 
+2 DATE 1918
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180250283
+1 FAMC @F88@
+0 @I347@ INDI
+1 NAME Elsie May /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1917
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180250752
+1 FAMC @F88@
+0 @I280@ INDI
+1 NAME Thomas /Craven/
+1 SEX M
+1 BIRT 
+2 DATE 1916
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180250800
+1 FAMC @F88@
+0 @I281@ INDI
+1 NAME William /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1855
+2 PLAC Borsall  Warwickshire England, WARWICK
+1 RFN 180250957
+1 FAMS @F90@
+0 @I282@ INDI
+1 NAME Emma /Teat/
+1 SEX F
+1 BIRT 
+2 DATE 1859
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180250958
+1 FAMS @F90@
+0 @I283@ INDI
+1 NAME Phyllis /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1892
+2 PLAC Doveridge DERBY Derbyshire England
+1 RFN 180251557
+1 FAMC @F90@
+0 @I284@ INDI
+1 NAME Arthur Leslie /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1894
+2 PLAC Doveridge, Derbyshire England, DERBY
+1 RFN 180251627
+1 FAMS @F91@
+1 FAMC @F90@
+0 @I285@ INDI
+1 NAME George Edward /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1898
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180251681
+1 FAMS @F92@
+1 FAMC @F90@
+0 @I286@ INDI
+1 NAME May /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1899
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180251813
+1 FAMS @F79@
+1 FAMC @F90@
+0 @I287@ INDI
+1 NAME Charles Henry /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1890
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180251940
+1 FAMC @F90@
+0 @I288@ INDI
+1 NAME William John /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1888
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180251999
+1 FAMS @F93@
+1 FAMC @F90@
+0 @I289@ INDI
+1 NAME Edith Myra /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1886
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180252078
+1 FAMC @F90@
+0 @I290@ INDI
+1 NAME Bertha Emma /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1886
+2 PLAC Doveridge, DERBY Derbyshire England
+1 RFN 180252163
+1 FAMC @F90@
+0 @I291@ INDI
+1 NAME Frank /Bates/
+1 SEX M
+1 BIRT 
+2 DATE 1899
+2 PLAC Unknown, England
+1 RFN 180597833
+1 FAMS @F79@
+0 @I292@ INDI
+1 NAME Mary Ann /Ryan/
+1 SEX F
+1 BIRT 
+2 DATE 1897
+2 PLAC Unknown, England
+1 RFN 180597862
+1 FAMS @F92@
+0 @I293@ INDI
+1 NAME William /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 12 JUL 1922
+2 PLAC WARRINGTON Cheshire England
+1 DEAT 
+2 DATE 1977
+1 RFN 180597885
+1 FAMS @F80@
+1 FAMC @F92@
+0 @I346@ INDI
+1 NAME Eileen /Unknown/
+1 SEX F
+1 BIRT 
+2 DATE 1929
+2 PLAC Unknown, England
+1 RFN 180597928
+1 FAMS @F80@
+0 @I294@ INDI
+1 NAME David /Kemp/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC Unknown, England
+1 RFN 180598001
+1 FAMC @F80@
+0 @I295@ INDI
+1 NAME Susan /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1946
+2 PLAC Unknown, England
+1 RFN 180598029
+1 FAMS @F81@
+1 FAMC @F80@
+0 @I296@ INDI
+1 NAME John /Houghton/
+1 SEX M
+1 BIRT 
+2 DATE 1945
+2 PLAC Unknown, England
+1 RFN 180598052
+1 FAMS @F81@
+0 @I297@ INDI
+1 NAME Adam /Houghton/
+1 SEX M
+1 BIRT 
+2 DATE 1981
+2 PLAC Unknown, England
+1 RFN 180598082
+1 FAMC @F81@
+0 @I298@ INDI
+1 NAME Hannah /Houghton/
+1 SEX F
+1 BIRT 
+2 DATE 1986
+2 PLAC Unknown, England
+1 RFN 180598103
+1 FAMC @F81@
+0 @I299@ INDI
+1 NAME Bella /Unkown/
+1 SEX F
+1 BIRT 
+2 DATE 1894
+2 PLAC Unkown, England
+1 RFN 180598291
+1 FAMS @F91@
+0 @I300@ INDI
+1 NAME Helen /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1920
+2 PLAC Unkown, England
+1 RFN 180598328
+1 FAMC @F91@
+0 @I345@ INDI
+1 NAME Norma /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1921
+2 PLAC Unknown, England
+1 RFN 180598358
+1 FAMC @F91@
+0 @I344@ INDI
+1 NAME Betty /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1922
+2 PLAC Unknown, England
+1 RFN 180598398
+1 FAMC @F91@
+0 @I343@ INDI
+1 NAME Mabel /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1923
+2 PLAC Unknown, England
+1 RFN 180598439
+1 FAMC @F91@
+0 @I342@ INDI
+1 NAME Valerie /Unknown/
+1 SEX F
+1 BIRT 
+2 DATE 1932
+2 PLAC Unknown, England
+1 RFN 180598645
+1 FAMS @F89@
+0 @I341@ INDI
+1 NAME Geofrey /Craven/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC Unknown, England
+1 RFN 180598669
+1 FAMC @F89@
+0 @I340@ INDI
+1 NAME Victoria /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1947
+2 PLAC U{nknown, England
+1 RFN 180598689
+1 FAMC @F89@
+0 @I339@ INDI
+1 NAME Lisa /Craven/
+1 SEX F
+1 BIRT 
+2 DATE 1948
+2 PLAC Unknown, England
+1 RFN 180598704
+1 FAMC @F89@
+0 @I338@ INDI
+1 NAME George /Wainright/
+1 SEX M
+1 BIRT 
+2 DATE 1930
+2 PLAC Unknown, England
+1 RFN 180598738
+1 FAMS @F82@
+0 @I337@ INDI
+1 NAME Stephen /Wainright/
+1 SEX M
+1 BIRT 
+2 DATE 1944
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180598778
+1 FAMC @F82@
+0 @I336@ INDI
+1 NAME Lynda /Wainright/
+1 SEX F
+1 BIRT 
+2 DATE 1945
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180598785
+1 FAMC @F82@
+0 @I301@ INDI
+1 NAME Gillian /Wainright/
+1 SEX F
+1 BIRT 
+2 DATE 1946
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180598803
+1 FAMC @F82@
+0 @I302@ INDI
+1 NAME Thomas /Barlow/
+1 SEX M
+1 BIRT 
+2 DATE 1926
+2 PLAC Unknown, England
+1 RFN 180598817
+1 FAMS @F83@
+0 @I303@ INDI
+1 NAME Michael J /Barlow/
+1 SEX M
+1 BIRT 
+2 DATE 1946
+2 PLAC Unkown, England
+1 RFN 180598833
+1 FAMC @F83@
+0 @I304@ INDI
+1 NAME Alan T /Barlow/
+1 SEX M
+1 BIRT 
+2 DATE 1945
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180598857
+1 FAMC @F83@
+0 @I305@ INDI
+1 NAME Sarah /Beech/
+1 SEX F
+1 BIRT 
+2 DATE 1888
+2 PLAC Kinnersley, Shropshire, England
+1 RFN 180598977
+1 FAMS @F93@
+0 @I306@ INDI
+1 NAME Louie /Kemp/
+1 SEX F
+1 BIRT 
+2 DATE 1918
+2 PLAC Reddish STOCKPORT Cheshire England
+1 RFN 180599025
+1 FAMS @F84@
+1 FAMC @F93@
+0 @I307@ INDI
+1 NAME John Alfred /Morris/
+1 SEX M
+1 BIRT 
+2 DATE 1918
+2 PLAC Gorton, MANCHESTER Lancashire England
+1 RFN 180599043
+1 FAMS @F84@
+0 @I308@ INDI
+1 NAME William John /Morris/
+1 SEX M
+1 BIRT 
+2 DATE 1951
+2 PLAC Reddish, STOCKPORT Cheshire England
+1 RFN 180599113
+1 FAMC @F84@
+0 @I335@ INDI
+1 NAME Polly /(Mother)/
+1 SEX F
+1 BIRT 
+2 DATE 1898
+2 PLAC WARRINGTON Cheshire England
+1 RFN 180661904
+1 FAMS @F94@
+0 @I334@ INDI
+1 NAME  /(Father)/
+1 SEX M
+1 RFN 180661905
+1 FAMS @F94@
+0 @I309@ INDI
+1 NAME Peter /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1744
+2 PLAC Greensnook,, Lancashire, England
+1 RFN 180895007
+1 FAMS @F95@
+1 FAMS @F96@
+1 FAMC @F85@
+0 @I310@ INDI
+1 NAME Elizabeth /Ormerod/
+1 SEX F
+1 BIRT 
+2 DATE 1751
+2 PLAC Unknown, England
+1 RFN 180895008
+1 FAMS @F95@
+0 @I311@ INDI
+1 NAME John /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1710
+2 PLAC Unkown, England
+1 RFN 180895076
+1 FAMS @F85@
+1 FAMC @F86@
+0 @I312@ INDI
+1 NAME Alice /Mills/
+1 SEX F
+1 BIRT 
+2 DATE 1710
+2 PLAC Unknown, England
+1 RFN 180895077
+1 FAMS @F85@
+0 @I313@ INDI
+1 NAME Richard /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1690
+2 PLAC Unknown, England
+1 RFN 180895166
+1 FAMS @F86@
+0 @I314@ INDI
+1 NAME  /(Mother)/
+1 SEX F
+1 RFN 180895167
+1 FAMS @F86@
+0 @I315@ INDI
+1 NAME Susanna /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1779
+2 PLAC Greensnoock, ROSSENDALE Lancashire England
+1 RFN 180895517
+1 FAMC @F95@
+0 @I316@ INDI
+1 NAME John /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1780
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180895572
+1 FAMC @F95@
+0 @I317@ INDI
+1 NAME Ormerod /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1782
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180895646
+1 FAMC @F95@
+0 @I318@ INDI
+1 NAME James /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1784
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180895710
+1 FAMC @F95@
+0 @I319@ INDI
+1 NAME Susannah /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1790
+2 PLAC BACUP Lancashire England
+1 RFN 180895769
+1 FAMC @F95@
+0 @I320@ INDI
+1 NAME George /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1792
+2 PLAC BACUP Lancashire England
+1 RFN 180895798
+1 FAMC @F95@
+0 @I321@ INDI
+1 NAME Betty /Holden/
+1 SEX F
+1 BIRT 
+2 DATE 1744
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180896012
+1 FAMS @F96@
+0 @I322@ INDI
+1 NAME Betty /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1764
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180896064
+1 FAMC @F96@
+0 @I323@ INDI
+1 NAME Mary /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1765
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180896101
+1 FAMC @F96@
+0 @I324@ INDI
+1 NAME Susan /Heyworth/
+1 SEX F
+1 BIRT 
+2 DATE 1768
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180896138
+1 FAMC @F96@
+0 @I325@ INDI
+1 NAME John /Heyworth/
+1 SEX M
+1 BIRT 
+2 DATE 1769
+2 PLAC ROSSENDALE Lancashire England
+1 RFN 180896162
+1 FAMC @F96@
+0 @I326@ INDI
+1 NAME William /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1787
+2 PLAC BOLTON Lancashire England
+1 RFN 181174093
+1 FAMS @F97@
+1 FAMC @F98@
+0 @I327@ INDI
+1 NAME Margaret /Greenhalgh/
+1 SEX F
+1 BIRT 
+2 DATE 1785
+2 PLAC BOLTON Lancashire England
+1 RFN 181174094
+1 FAMS @F97@
+0 @I328@ INDI
+1 NAME James /Horridge/
+1 SEX M
+1 BIRT 
+2 DATE 1760
+2 PLAC BOLTON Lancashire England
+1 RFN 181174202
+1 FAMS @F98@
+0 @I329@ INDI
+1 NAME  /(Mother)/
+1 SEX F
+1 RFN 181174203
+1 FAMS @F98@
+0 @I330@ INDI
+1 NAME Susan /Edwards/
+1 SEX F
+1 BIRT 
+2 DATE 1898
+2 PLAC BURY Lancashire England
+1 RFN 181656792
+1 FAMS @F23@
+0 @I331@ INDI
+1 NAME Anne /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1910
+2 PLAC BURY Lancashire England
+1 RFN 181656863
+1 FAMC @F23@
+0 @I332@ INDI
+1 NAME Susan /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1919
+2 PLAC BURY Lancashire England
+1 RFN 181656930
+1 FAMC @F23@
+0 @I333@ INDI
+1 NAME Jean /Horridge/
+1 SEX F
+1 BIRT 
+2 DATE 1928
+2 PLAC BURY Lancashire England
+1 RFN 181656991
+1 FAMC @F23@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I4@
+1 MARR 
+2 DATE 30 SEP 2006
+2 PLAC St Joseph's Penketh, Warringto
+0 @F2@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 CHIL @I22@
+1 CHIL @I23@
+1 CHIL @I24@
+1 CHIL @I25@
+1 MARR 
+2 DATE 7 SEP 1974
+2 PLAC Guardian Angels, Bury
+0 @F13@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 CHIL @I4@
+1 CHIL @I7@
+1 CHIL @I8@
+0 @F11@ FAM
+1 HUSB @I12@
+1 WIFE @I13@
+1 CHIL @I5@
+1 CHIL @I50@
+1 CHIL @I51@
+0 @F7@ FAM
+1 HUSB @I33@
+1 WIFE @I34@
+1 CHIL @I2@
+1 CHIL @I35@
+1 CHIL @I36@
+1 MARR 
+2 DATE 10 JUN 1942
+2 PLAC Bury
+0 @F4@ FAM
+1 HUSB @I38@
+1 WIFE @I40@
+1 CHIL @I41@
+1 CHIL @I42@
+1 CHIL @I43@
+1 CHIL @I44@
+1 MARR 
+2 DATE 30 JUL 1977
+0 @F5@ FAM
+1 HUSB @I36@
+1 WIFE @I72@
+0 @F6@ FAM
+1 HUSB @I35@
+1 WIFE @I37@
+1 CHIL @I48@
+1 CHIL @I49@
+0 @F3@ FAM
+1 HUSB @I31@
+1 WIFE @I32@
+1 CHIL @I3@
+1 CHIL @I38@
+1 CHIL @I39@
+1 MARR 
+2 DATE 7 SEP 1946
+0 @F8@ FAM
+1 HUSB @I23@
+1 WIFE @I29@
+1 CHIL @I30@
+0 @F9@ FAM
+1 HUSB @I22@
+1 WIFE @I26@
+1 CHIL @I27@
+1 CHIL @I28@
+1 MARR 
+2 DATE 8 APR 2000
+2 PLAC Sacred Heart, Warrington
+0 @F10@ FAM
+1 HUSB @I20@
+1 WIFE @I16@
+1 CHIL @I21@
+0 @F14@ FAM
+1 HUSB @I17@
+1 WIFE @I19@
+0 @F15@ FAM
+1 HUSB @I14@
+1 WIFE @I15@
+1 CHIL @I6@
+1 CHIL @I16@
+1 CHIL @I17@
+1 CHIL @I18@
+0 @F12@ FAM
+1 HUSB @I9@
+1 WIFE @I8@
+1 CHIL @I10@
+1 CHIL @I11@
+0 @F30@ FAM
+1 HUSB @I81@
+1 WIFE @I82@
+1 CHIL @I58@
+1 CHIL @I80@
+1 CHIL @I189@
+0 @F29@ FAM
+1 HUSB @I79@
+1 WIFE @I229@
+1 CHIL @I197@
+1 CHIL @I202@
+1 MARR 
+2 DATE 24 MAR 1951
+2 PLAC St Paul's Walkden
+0 @F16@ FAM
+1 HUSB @I73@
+1 WIFE @I228@
+0 @F17@ FAM
+1 HUSB @I71@
+1 WIFE @I96@
+1 MARR 
+2 PLAC St Edmund's
+0 @F18@ FAM
+1 HUSB @I68@
+1 WIFE @I69@
+1 CHIL @I59@
+1 CHIL @I67@
+1 CHIL @I77@
+1 CHIL @I78@
+0 @F19@ FAM
+1 HUSB @I67@
+1 WIFE @I70@
+1 CHIL @I229@
+1 CHIL @I71@
+1 MARR 
+2 DATE 1922
+2 PLAC Bury
+0 @F20@ FAM
+1 HUSB @I65@
+1 WIFE @I75@
+0 @F21@ FAM
+1 HUSB @I64@
+1 WIFE @I66@
+1 CHIL @I74@
+0 @F22@ FAM
+1 HUSB @I61@
+1 WIFE @I62@
+1 CHIL @I56@
+1 CHIL @I60@
+1 CHIL @I230@
+1 CHIL @I63@
+1 CHIL @I226@
+1 CHIL @I86@
+1 CHIL @I225@
+0 @F23@ FAM
+1 HUSB @I60@
+1 WIFE @I330@
+1 CHIL @I331@
+1 CHIL @I332@
+1 CHIL @I333@
+0 @F24@ FAM
+1 HUSB @I58@
+1 WIFE @I59@
+1 CHIL @I34@
+0 @F25@ FAM
+1 HUSB @I56@
+1 WIFE @I57@
+1 CHIL @I33@
+1 CHIL @I64@
+1 CHIL @I65@
+1 CHIL @I85@
+0 @F26@ FAM
+1 HUSB @I54@
+1 WIFE @I55@
+1 CHIL @I31@
+1 CHIL @I90@
+1 CHIL @I91@
+1 CHIL @I92@
+0 @F27@ FAM
+1 HUSB @I53@
+1 WIFE @I52@
+1 CHIL @I32@
+1 CHIL @I228@
+1 MARR 
+2 DATE 25 FEB 1921
+0 @F28@ FAM
+1 HUSB @I45@
+1 WIFE @I39@
+1 CHIL @I46@
+1 CHIL @I47@
+1 MARR 
+2 DATE 10 OCT 1981
+0 @F31@ FAM
+1 HUSB @I83@
+1 WIFE @I84@
+1 CHIL @I61@
+1 CHIL @I223@
+1 CHIL @I88@
+1 CHIL @I89@
+0 @F47@ FAM
+1 HUSB @I87@
+1 WIFE @I48@
+0 @F48@ FAM
+1 HUSB @I91@
+1 WIFE @I94@
+0 @F49@ FAM
+1 HUSB @I93@
+1 WIFE @I92@
+0 @F50@ FAM
+1 HUSB @I95@
+1 WIFE @I90@
+0 @F40@ FAM
+1 HUSB @I140@
+1 WIFE @I137@
+1 CHIL @I203@
+1 CHIL @I204@
+1 CHIL @I205@
+1 CHIL @I206@
+1 CHIL @I207@
+1 CHIL @I208@
+0 @F32@ FAM
+1 HUSB @I99@
+1 WIFE @I100@
+1 CHIL @I9@
+1 CHIL @I101@
+0 @F53@ FAM
+1 HUSB @I102@
+1 WIFE @I103@
+1 CHIL @I52@
+1 CHIL @I124@
+1 CHIL @I188@
+1 CHIL @I126@
+1 CHIL @I127@
+0 @F33@ FAM
+1 HUSB @I104@
+1 WIFE @I105@
+1 CHIL @I102@
+1 CHIL @I108@
+1 CHIL @I109@
+1 CHIL @I110@
+1 CHIL @I111@
+1 CHIL @I112@
+1 CHIL @I222@
+1 CHIL @I113@
+1 CHIL @I114@
+1 CHIL @I180@
+0 @F51@ FAM
+1 HUSB @I106@
+1 WIFE @I107@
+1 CHIL @I15@
+1 CHIL @I272@
+1 CHIL @I273@
+1 CHIL @I274@
+1 CHIL @I275@
+1 CHIL @I350@
+1 CHIL @I276@
+1 CHIL @I277@
+0 @F34@ FAM
+1 HUSB @I125@
+1 WIFE @I124@
+1 CHIL @I128@
+1 CHIL @I129@
+1 CHIL @I130@
+1 CHIL @I131@
+1 CHIL @I132@
+0 @F35@ FAM
+1 HUSB @I176@
+1 WIFE @I188@
+1 CHIL @I174@
+1 CHIL @I173@
+1 CHIL @I171@
+1 CHIL @I133@
+1 CHIL @I169@
+1 CHIL @I162@
+0 @F36@ FAM
+1 HUSB @I126@
+1 WIFE @I161@
+1 CHIL @I134@
+0 @F37@ FAM
+1 HUSB @I127@
+1 WIFE @I135@
+1 CHIL @I149@
+1 CHIL @I136@
+1 CHIL @I144@
+0 @F38@ FAM
+1 HUSB @I159@
+1 WIFE @I134@
+1 CHIL @I157@
+1 CHIL @I150@
+0 @F39@ FAM
+1 HUSB @I138@
+1 WIFE @I139@
+1 CHIL @I117@
+1 CHIL @I137@
+1 CHIL @I143@
+1 CHIL @I141@
+1 CHIL @I142@
+1 CHIL @I231@
+1 CHIL @I232@
+1 CHIL @I145@
+0 @F41@ FAM
+1 HUSB @I146@
+1 WIFE @I232@
+0 @F42@ FAM
+1 HUSB @I147@
+1 WIFE @I148@
+1 CHIL @I53@
+1 CHIL @I233@
+1 CHIL @I234@
+1 CHIL @I175@
+1 MARR 
+2 DATE 23 DEC 1890
+2 PLAC Edenfield Parish Church
+0 @F43@ FAM
+1 HUSB @I152@
+1 WIFE @I151@
+1 CHIL @I55@
+1 CHIL @I160@
+1 CHIL @I237@
+1 CHIL @I238@
+0 @F44@ FAM
+1 HUSB @I153@
+1 WIFE @I154@
+1 CHIL @I54@
+1 CHIL @I155@
+1 CHIL @I156@
+1 CHIL @I235@
+1 CHIL @I158@
+1 CHIL @I236@
+1 CHIL @I165@
+1 CHIL @I166@
+1 CHIL @I167@
+1 MARR 
+2 DATE 14 APR 1882
+0 @F45@ FAM
+1 HUSB @I163@
+1 WIFE @I164@
+1 CHIL @I153@
+1 CHIL @I168@
+1 CHIL @I239@
+1 CHIL @I170@
+1 CHIL @I240@
+1 CHIL @I172@
+1 MARR 
+2 DATE 24 FEB 1851
+0 @F46@ FAM
+1 HUSB @I163@
+1 WIFE @I241@
+1 CHIL @I242@
+0 @F52@ FAM
+1 HUSB @I116@
+1 WIFE @I117@
+1 CHIL @I104@
+1 CHIL @I115@
+1 CHIL @I118@
+1 CHIL @I119@
+1 CHIL @I120@
+1 CHIL @I121@
+1 CHIL @I122@
+1 CHIL @I221@
+1 CHIL @I123@
+0 @F76@ FAM
+1 HUSB @I208@
+1 WIFE @I267@
+0 @F60@ FAM
+1 HUSB @I209@
+1 WIFE @I203@
+1 CHIL @I210@
+1 CHIL @I211@
+1 CHIL @I212@
+1 CHIL @I213@
+1 CHIL @I214@
+1 CHIL @I215@
+1 CHIL @I216@
+1 CHIL @I217@
+1 CHIL @I218@
+1 CHIL @I219@
+0 @F88@ FAM
+1 HUSB @I271@
+1 WIFE @I270@
+1 CHIL @I13@
+1 CHIL @I349@
+1 CHIL @I278@
+1 CHIL @I279@
+1 CHIL @I348@
+1 CHIL @I347@
+1 CHIL @I280@
+0 @F77@ FAM
+1 HUSB @I220@
+1 WIFE @I210@
+1 CHIL @I245@
+1 CHIL @I246@
+1 CHIL @I247@
+1 CHIL @I248@
+1 CHIL @I249@
+1 CHIL @I250@
+1 CHIL @I251@
+1 CHIL @I252@
+0 @F56@ FAM
+1 HUSB @I198@
+1 WIFE @I197@
+1 CHIL @I199@
+1 CHIL @I200@
+0 @F64@ FAM
+1 HUSB @I243@
+1 WIFE @I177@
+1 CHIL @I147@
+1 CHIL @I181@
+1 CHIL @I182@
+1 CHIL @I183@
+1 CHIL @I184@
+0 @F78@ FAM
+1 HUSB @I186@
+1 WIFE @I187@
+1 CHIL @I243@
+1 CHIL @I185@
+1 CHIL @I244@
+0 @F57@ FAM
+1 HUSB @I204@
+1 WIFE @I264@
+0 @F58@ FAM
+1 HUSB @I205@
+1 WIFE @I265@
+0 @F59@ FAM
+1 HUSB @I207@
+1 WIFE @I266@
+0 @F72@ FAM
+1 HUSB @I190@
+1 WIFE @I97@
+1 CHIL @I192@
+1 CHIL @I193@
+0 @F82@ FAM
+1 HUSB @I338@
+1 WIFE @I278@
+1 CHIL @I337@
+1 CHIL @I336@
+1 CHIL @I301@
+0 @F83@ FAM
+1 HUSB @I302@
+1 WIFE @I349@
+1 CHIL @I303@
+1 CHIL @I304@
+0 @F84@ FAM
+1 HUSB @I307@
+1 WIFE @I306@
+1 CHIL @I308@
+0 @F74@ FAM
+1 HUSB @I191@
+1 WIFE @I97@
+0 @F54@ FAM
+1 HUSB @I194@
+1 WIFE @I98@
+1 CHIL @I195@
+0 @F75@ FAM
+1 HUSB @I200@
+1 WIFE @I201@
+0 @F87@ FAM
+1 HUSB @I268@
+1 WIFE @I269@
+1 CHIL @I154@
+0 @F61@ FAM
+1 HUSB @I253@
+1 WIFE @I211@
+0 @F62@ FAM
+1 HUSB @I254@
+1 WIFE @I212@
+1 CHIL @I255@
+0 @F63@ FAM
+1 HUSB @I255@
+1 WIFE @I256@
+0 @F66@ FAM
+1 HUSB @I257@
+1 WIFE @I213@
+0 @F67@ FAM
+1 HUSB @I258@
+1 WIFE @I214@
+0 @F68@ FAM
+1 HUSB @I259@
+1 WIFE @I215@
+0 @F69@ FAM
+1 HUSB @I260@
+1 WIFE @I216@
+0 @F70@ FAM
+1 HUSB @I261@
+1 WIFE @I217@
+0 @F65@ FAM
+1 HUSB @I179@
+1 WIFE @I178@
+1 CHIL @I148@
+0 @F55@ FAM
+1 HUSB @I196@
+1 WIFE @I98@
+0 @F79@ FAM
+1 HUSB @I291@
+1 WIFE @I286@
+0 @F80@ FAM
+1 HUSB @I293@
+1 WIFE @I346@
+1 CHIL @I294@
+1 CHIL @I295@
+0 @F81@ FAM
+1 HUSB @I296@
+1 WIFE @I295@
+1 CHIL @I297@
+1 CHIL @I298@
+0 @F86@ FAM
+1 HUSB @I313@
+1 WIFE @I314@
+1 CHIL @I311@
+0 @F89@ FAM
+1 HUSB @I279@
+1 WIFE @I342@
+1 CHIL @I341@
+1 CHIL @I340@
+1 CHIL @I339@
+0 @F90@ FAM
+1 HUSB @I281@
+1 WIFE @I282@
+1 CHIL @I270@
+1 CHIL @I283@
+1 CHIL @I284@
+1 CHIL @I285@
+1 CHIL @I286@
+1 CHIL @I287@
+1 CHIL @I288@
+1 CHIL @I289@
+1 CHIL @I290@
+0 @F91@ FAM
+1 HUSB @I284@
+1 WIFE @I299@
+1 CHIL @I300@
+1 CHIL @I345@
+1 CHIL @I344@
+1 CHIL @I343@
+0 @F71@ FAM
+1 HUSB @I262@
+1 WIFE @I219@
+0 @F92@ FAM
+1 HUSB @I285@
+1 WIFE @I292@
+1 CHIL @I293@
+0 @F93@ FAM
+1 HUSB @I288@
+1 WIFE @I305@
+1 CHIL @I306@
+0 @F94@ FAM
+1 HUSB @I334@
+1 WIFE @I335@
+1 CHIL @I14@
+0 @F95@ FAM
+1 HUSB @I309@
+1 WIFE @I310@
+1 CHIL @I140@
+1 CHIL @I315@
+1 CHIL @I316@
+1 CHIL @I317@
+1 CHIL @I318@
+1 CHIL @I319@
+1 CHIL @I320@
+0 @F96@ FAM
+1 HUSB @I309@
+1 WIFE @I321@
+1 CHIL @I322@
+1 CHIL @I323@
+1 CHIL @I324@
+1 CHIL @I325@
+0 @F85@ FAM
+1 HUSB @I311@
+1 WIFE @I312@
+1 CHIL @I309@
+0 @F73@ FAM
+1 HUSB @I263@
+1 WIFE @I219@
+0 @F97@ FAM
+1 HUSB @I326@
+1 WIFE @I327@
+1 CHIL @I83@
+0 @F98@ FAM
+1 HUSB @I328@
+1 WIFE @I329@
+1 CHIL @I326@
+0 @F99@ FAM
+1 HUSB @I75@
+1 WIFE @I65@
+1 CHIL @I76@
+0 @F100@ FAM
+1 HUSB @I75@
+1 WIFE @I75@
+1 CHIL @I227@
+1 CHIL @I224@
+0 @F101@ FAM
+1 HUSB @I96@
+1 WIFE @I71@
+1 CHIL @I97@
+1 CHIL @I98@
+0 TRLR
