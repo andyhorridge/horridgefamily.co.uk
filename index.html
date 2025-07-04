@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Horridge Family</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Horridge Family Tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      text-align: center;
       padding: 2em;
+      background: #f9f9f9;
+      text-align: center;
     }
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    #tree-wrapper {
+    #tree {
       width: 100%;
-      height: 900px;
-      margin-top: 40px;
-      border-radius: 12px;
-      overflow: hidden;
+      height: 90vh;
+      margin-top: 2em;
     }
   </style>
   <script src="OrgChart.js"></script>
-  <script src="orgchart-data.js"></script>
 </head>
 <body>
-  <h1>Welcome to the Horridge Family Website</h1>
-  <img src="2023-05-06.JPG" alt="Family Photo">
-  <p class="caption">Family photo from 6th May 2023</p>
+  <h1>Horridge Family Tree</h1>
+  <div id="tree"></div>
 
-  <h2>Explore the Full Family Tree</h2>
-  <div id="tree-wrapper"></div>
-
+  <script src="tree-data.js"></script>
   <script>
-    new OrgChart(document.getElementById("tree-wrapper"), {
+    new OrgChart(document.getElementById("tree"), {
       nodes: orgchart_nodes,
       layout: OrgChart.tree,
       enableSearch: true,
