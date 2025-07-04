@@ -5,23 +5,39 @@
   <title>Horridge Family Tree</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body { font-family: sans-serif; padding: 2em; background: #f9f9f9; text-align: center; }
-    #tree { width: 100%; height: 90vh; margin-top: 2em; }
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    #tree {
+      width: 100%;
+      height: 80vh;
+      margin-top: 2em;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
   <h1>Horridge Family Tree</h1>
-  <img src="2023-05-06.JPG" alt="Family Photo" style="max-width: 90%; border-radius: 12px; margin-top: 20px;" />
+  <img src="2023-05-06.JPG" alt="Family Photo" />
   <div id="tree"></div>
 
   <script src="OrgChart.js"></script>
-  <script src="tree-data.js"></script>
   <script>
     new OrgChart(document.getElementById("tree"), {
-      nodes: orgchart_nodes,
+      nodes: [
+        { id: 1, name: "Test Parent" },
+        { id: 2, pid: 1, name: "Test Child" }
+      ],
       layout: OrgChart.tree,
       enableSearch: true,
-      enableDragDrop: false,
       nodeBinding: {
         field_0: "name"
       }
