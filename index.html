@@ -30,18 +30,23 @@
   <div id="tree"></div>
 
   <script src="OrgChart.js"></script>
+  <script src="tree-data.js"></script>
   <script>
-    new OrgChart(document.getElementById("tree"), {
-      nodes: [
-        { id: 1, name: "Test Parent" },
-        { id: 2, pid: 1, name: "Test Child" }
-      ],
-      layout: OrgChart.tree,
-      enableSearch: true,
-      nodeBinding: {
-        field_0: "name"
-      }
-    });
+    try {
+      new OrgChart(document.getElementById("tree"), {
+        nodes: orgchart_nodes,
+        layout: OrgChart.tree,
+        enableSearch: true,
+        enableDragDrop: false,
+        nodeBinding: {
+          field_0: "name"
+        }
+      });
+    } catch (e) {
+      document.getElementById("tree").innerHTML = 
+        "<p style='color:red'><strong>Error loading tree:</strong> " + e.message + "</p>";
+      console.error("OrgChart error:", e);
+    }
   </script>
 </body>
 </html>
