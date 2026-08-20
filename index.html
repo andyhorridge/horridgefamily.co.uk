@@ -3,111 +3,233 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
-  <title>Horridge Family Tree</title>
+<title>Horridge Family Tree</title>
 
-  <style>
+<style>
 
-    * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      background: #f7f7f7;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-    }
+body {
+  margin: 0;
+  background: #f7f7f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: #222;
+}
 
-    body {
-      text-align: center;
-    }
+header {
+  text-align: center;
+  padding: 35px 20px 20px;
+}
 
-    header {
-      padding: 30px 20px 20px;
-    }
+h1 {
+  font-size: clamp(36px, 7vw, 62px);
+  margin: 0 0 30px;
+}
 
-    h1 {
-      margin: 0 0 25px;
-      font-size: clamp(32px, 7vw, 58px);
-    }
+.family-photo {
+  display: block;
+  width: min(90%, 850px);
+  height: auto;
+  margin: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.12);
+}
 
-    .family-photo {
-      display: block;
-      width: min(90%, 850px);
-      height: auto;
-      margin: 0 auto;
-      border-radius: 18px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-    }
+.caption {
+  color: #666;
+  margin-top: 14px;
+}
 
-    .caption {
-      margin-top: 14px;
-      color: #666;
-      font-size: 16px;
-    }
+.tree-section {
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
 
-    .tree-section {
-      padding: 10px 10px 40px;
-    }
+.tree-section h2 {
+  text-align: center;
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 8px;
+}
 
-    .tree-section h2 {
-      font-size: clamp(26px, 5vw, 42px);
-      margin-bottom: 10px;
-    }
+.instructions {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
 
-    .instructions {
-      color: #666;
-      margin: 0 0 18px;
-      font-size: 15px;
-    }
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
-    #status {
-      margin: 15px auto;
-      font-weight: bold;
-      color: #555;
-    }
+.controls input {
+  width: min(100%, 400px);
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
 
-    #tree {
-      width: 100%;
-      height: 75vh;
-      min-height: 600px;
-      background: white;
-      border-radius: 16px;
-      border: 1px solid #ddd;
-      overflow: hidden;
-      position: relative;
-    }
+.controls button {
+  border: 0;
+  background: #222;
+  color: white;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
 
-    @media (max-width: 600px) {
+#status {
+  text-align: center;
+  font-weight: 600;
+  margin: 20px;
+}
 
-      header {
-        padding: 22px 12px 15px;
-      }
+#tree {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 25px;
+  min-height: 500px;
+  overflow: auto;
+}
 
-      .tree-section {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
 
-      #tree {
-        height: 72vh;
-        min-height: 550px;
-        border-radius: 12px;
-      }
+/* TREE */
 
-    }
+.family-tree,
+.family-tree ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 28px;
+  position: relative;
+}
 
-  </style>
+.family-tree {
+  padding-left: 0;
+}
+
+.family-tree ul::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 12px;
+  border-left: 2px solid #ccc;
+}
+
+.family-tree li {
+  position: relative;
+  padding: 7px 0 7px 18px;
+}
+
+.family-tree li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 25px;
+  width: 28px;
+  border-top: 2px solid #ccc;
+}
+
+.family-tree > li::before {
+  display: none;
+}
+
+.person {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 9px 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 7px rgba(0,0,0,.06);
+  cursor: pointer;
+  user-select: none;
+}
+
+.person:hover {
+  background: #f2f2f2;
+}
+
+.toggle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.no-children .toggle {
+  visibility: hidden;
+}
+
+.children.collapsed {
+  display: none;
+}
+
+.highlight > .person {
+  background: #fff3a6;
+  border-color: #d3ad00;
+}
+
+.branch-title {
+  margin: 30px 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #555;
+}
+
+@media (max-width: 650px) {
+
+  header {
+    padding: 25px 12px 15px;
+  }
+
+  .tree-section {
+    padding: 10px;
+  }
+
+  #tree {
+    padding: 14px 8px;
+    border-radius: 12px;
+  }
+
+  .family-tree,
+  .family-tree ul {
+    padding-left: 19px;
+  }
+
+  .person {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+}
+
+</style>
 
 </head>
 
@@ -120,9 +242,9 @@
   <h1>Horridge Family Tree</h1>
 
   <img
-    src="2023-05-06.JPG"
-    alt="Horridge family photo"
     class="family-photo"
+    src="2023-05-06.JPG"
+    alt="Horridge Family"
   >
 
   <p class="caption">
@@ -137,156 +259,228 @@
   <h2>Explore the Family Tree</h2>
 
   <p class="instructions">
-    Tap a person to explore their branch. Pinch to zoom and drag to move around.
+    Tap a name to open or close that family branch.
   </p>
+
+
+  <div class="controls">
+
+    <input
+      type="search"
+      id="search"
+      placeholder="Search family member..."
+    >
+
+    <button id="expandAll">
+      Expand all
+    </button>
+
+    <button id="collapseAll">
+      Collapse all
+    </button>
+
+  </div>
+
 
   <div id="status">
     Loading family tree…
   </div>
+
 
   <div id="tree"></div>
 
 </section>
 
 
-<script src="OrgChart.js"></script>
-
-
 <script>
 
-async function startFamilyTree() {
+const treeContainer = document.getElementById("tree");
+const statusBox = document.getElementById("status");
 
-  const status = document.getElementById("status");
-  const treeElement = document.getElementById("tree");
+
+async function loadTree() {
 
   try {
-
-    /*
-      First make sure the OrgChart library has loaded.
-    */
-
-    if (typeof OrgChart === "undefined") {
-
-      throw new Error(
-        "OrgChart.js could not be loaded."
-      );
-
-    }
-
-
-    /*
-      Load your actual family data.
-    */
 
     const response = await fetch(
       "tree-data.json?v=" + Date.now()
     );
 
-
     if (!response.ok) {
-
       throw new Error(
-        "tree-data.json could not be loaded."
+        "Could not load tree-data.json"
       );
+    }
 
+    const people = await response.json();
+
+    if (!Array.isArray(people)) {
+      throw new Error(
+        "tree-data.json is not valid family data"
+      );
     }
 
 
-    const familyData = await response.json();
+    const peopleById = new Map();
 
+    people.forEach(person => {
 
-    if (
-      !Array.isArray(familyData) ||
-      familyData.length === 0
-    ) {
-
-      throw new Error(
-        "The family tree data is empty."
+      peopleById.set(
+        Number(person.id),
+        {
+          ...person,
+          id: Number(person.id),
+          children: []
+        }
       );
-
-    }
-
-
-    /*
-      OrgChart uses one parent ID for its tree layout.
-
-      Your GEDCOM conversion contains:
-      pid = father
-      mid = mother
-
-      For the visual hierarchy we use the father where
-      available, otherwise the mother.
-
-      The original mother relationship remains in
-      tree-data.json for later improvements.
-    */
-
-    const nodes = familyData.map(person => {
-
-      const node = {
-        id: person.id,
-        name: person.name || "Unknown"
-      };
-
-
-      if (person.pid && person.pid !== person.id) {
-
-        node.pid = person.pid;
-
-      }
-
-      else if (person.mid && person.mid !== person.id) {
-
-        node.pid = person.mid;
-
-      }
-
-
-      return node;
 
     });
 
 
     /*
-      Build interactive tree.
+      Build the visible tree.
+
+      We use father (pid) as the main tree parent.
+      If father isn't known, we use mother (mid).
+
+      This keeps every individual in a clean,
+      expandable hierarchy.
     */
 
-    const chart = new OrgChart(
-      treeElement,
-      {
+    peopleById.forEach(person => {
 
-        nodes: nodes,
+      let parentId = null;
 
-        nodeBinding: {
-          field_0: "name"
-        },
+      if (
+        person.pid &&
+        Number(person.pid) !== person.id &&
+        peopleById.has(Number(person.pid))
+      ) {
 
-        enableSearch: true,
-
-        enableDragDrop: false,
-
-        mouseScrool: OrgChart.action.zoom,
-
-        scaleInitial: 0.7
+        parentId = Number(person.pid);
 
       }
-    );
+
+      else if (
+        person.mid &&
+        Number(person.mid) !== person.id &&
+        peopleById.has(Number(person.mid))
+      ) {
+
+        parentId = Number(person.mid);
+
+      }
 
 
-    status.textContent =
-      familyData.length +
-      " family members loaded";
+      if (parentId) {
+
+        peopleById
+          .get(parentId)
+          .children
+          .push(person);
+
+      }
+
+    });
 
 
     /*
-      Hide status after a moment.
+      Find top-level ancestors.
     */
 
+    const childIds = new Set();
+
+    peopleById.forEach(person => {
+
+      person.children.forEach(child => {
+        childIds.add(child.id);
+      });
+
+    });
+
+
+    const roots = [];
+
+    peopleById.forEach(person => {
+
+      if (!childIds.has(person.id)) {
+        roots.push(person);
+      }
+
+    });
+
+
+    roots.sort((a,b) =>
+      a.name.localeCompare(b.name)
+    );
+
+
+    treeContainer.innerHTML = "";
+
+
+    const mainList =
+      document.createElement("ul");
+
+    mainList.className =
+      "family-tree";
+
+
+    roots.forEach(root => {
+
+      mainList.appendChild(
+        buildPerson(root, 0)
+      );
+
+    });
+
+
+    treeContainer.appendChild(mainList);
+
+
+    statusBox.textContent =
+      people.length +
+      " family members loaded";
+
     setTimeout(() => {
-
-      status.style.display = "none";
-
+      statusBox.style.display = "none";
     }, 2500);
+
+
+    /*
+      Start with deeper branches collapsed.
+    */
+
+    document
+      .querySelectorAll(
+        ".family-tree ul"
+      )
+      .forEach((ul, index) => {
+
+        if (index > 6) {
+
+          ul.classList.add(
+            "collapsed"
+          );
+
+          const parent =
+            ul.previousElementSibling;
+
+          if (parent) {
+
+            const toggle =
+              parent.querySelector(
+                ".toggle"
+              );
+
+            if (toggle) {
+              toggle.textContent = "+";
+            }
+
+          }
+
+        }
+
+      });
 
 
   }
@@ -295,9 +489,9 @@ async function startFamilyTree() {
 
     console.error(error);
 
-    status.style.color = "#c00";
+    statusBox.style.color = "red";
 
-    status.textContent =
+    statusBox.textContent =
       "Error loading family tree: " +
       error.message;
 
@@ -306,10 +500,306 @@ async function startFamilyTree() {
 }
 
 
-window.addEventListener(
-  "DOMContentLoaded",
-  startFamilyTree
-);
+
+function buildPerson(person, depth) {
+
+  const li =
+    document.createElement("li");
+
+  li.dataset.name =
+    person.name.toLowerCase();
+
+
+  const card =
+    document.createElement("div");
+
+  card.className = "person";
+
+
+  const toggle =
+    document.createElement("span");
+
+  toggle.className = "toggle";
+
+
+  if (person.children.length) {
+
+    toggle.textContent = "−";
+
+  }
+  else {
+
+    li.classList.add(
+      "no-children"
+    );
+
+  }
+
+
+  const name =
+    document.createElement("span");
+
+  name.textContent =
+    person.name || "Unknown";
+
+
+  card.appendChild(toggle);
+  card.appendChild(name);
+
+  li.appendChild(card);
+
+
+  if (person.children.length) {
+
+    const children =
+      document.createElement("ul");
+
+    children.className =
+      "children";
+
+
+    person.children
+      .sort((a,b) =>
+        a.name.localeCompare(b.name)
+      )
+      .forEach(child => {
+
+        children.appendChild(
+          buildPerson(
+            child,
+            depth + 1
+          )
+        );
+
+      });
+
+
+    li.appendChild(children);
+
+
+    card.addEventListener(
+      "click",
+      () => {
+
+        children.classList.toggle(
+          "collapsed"
+        );
+
+        toggle.textContent =
+          children.classList.contains(
+            "collapsed"
+          )
+          ? "+"
+          : "−";
+
+      }
+    );
+
+  }
+
+
+  return li;
+
+}
+
+
+
+/*
+  Expand everything
+*/
+
+document
+  .getElementById("expandAll")
+  .addEventListener(
+    "click",
+    () => {
+
+      document
+        .querySelectorAll(
+          ".children"
+        )
+        .forEach(item => {
+
+          item.classList.remove(
+            "collapsed"
+          );
+
+        });
+
+
+      document
+        .querySelectorAll(
+          ".toggle"
+        )
+        .forEach(toggle => {
+
+          if (
+            toggle
+              .closest("li")
+              .querySelector(
+                ":scope > .children"
+              )
+          ) {
+
+            toggle.textContent =
+              "−";
+
+          }
+
+        });
+
+    }
+  );
+
+
+
+/*
+  Collapse everything
+*/
+
+document
+  .getElementById("collapseAll")
+  .addEventListener(
+    "click",
+    () => {
+
+      document
+        .querySelectorAll(
+          ".children"
+        )
+        .forEach(item => {
+
+          item.classList.add(
+            "collapsed"
+          );
+
+        });
+
+
+      document
+        .querySelectorAll(
+          ".toggle"
+        )
+        .forEach(toggle => {
+
+          if (
+            toggle
+              .closest("li")
+              .querySelector(
+                ":scope > .children"
+              )
+          ) {
+
+            toggle.textContent =
+              "+";
+
+          }
+
+        });
+
+    }
+  );
+
+
+
+/*
+  Search
+*/
+
+document
+  .getElementById("search")
+  .addEventListener(
+    "input",
+    event => {
+
+      const value =
+        event.target.value
+          .toLowerCase()
+          .trim();
+
+
+      document
+        .querySelectorAll(
+          ".family-tree li"
+        )
+        .forEach(li => {
+
+          li.classList.remove(
+            "highlight"
+          );
+
+        });
+
+
+      if (!value) {
+        return;
+      }
+
+
+      const matches =
+        Array.from(
+          document.querySelectorAll(
+            ".family-tree li"
+          )
+        )
+        .filter(li =>
+          li.dataset.name &&
+          li.dataset.name.includes(
+            value
+          )
+        );
+
+
+      matches.forEach(li => {
+
+        li.classList.add(
+          "highlight"
+        );
+
+
+        let parent = li.parentElement;
+
+        while (
+          parent &&
+          parent !== treeContainer
+        ) {
+
+          if (
+            parent.classList &&
+            parent.classList.contains(
+              "children"
+            )
+          ) {
+
+            parent.classList.remove(
+              "collapsed"
+            );
+
+          }
+
+          parent =
+            parent.parentElement;
+
+        }
+
+      });
+
+
+      if (matches.length) {
+
+        matches[0]
+          .scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+
+      }
+
+    }
+  );
+
+
+loadTree();
 
 </script>
 
