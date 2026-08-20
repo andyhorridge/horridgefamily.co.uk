@@ -32,8 +32,11 @@ body {
   color: #222;
 }
 
-header {
+body {
   text-align: center;
+}
+
+header {
   padding: 30px 15px 15px;
 }
 
@@ -56,20 +59,24 @@ h1 {
   margin-top: 12px;
 }
 
+.version {
+  margin-top: 8px;
+  color: #999;
+  font-size: 13px;
+}
+
 main {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: auto;
-  padding: 20px 10px 50px;
+  padding: 20px 10px 60px;
 }
 
 h2 {
-  text-align: center;
   font-size: clamp(28px, 5vw, 44px);
   margin-bottom: 8px;
 }
 
 .intro {
-  text-align: center;
   color: #666;
   margin: 0 auto 22px;
 }
@@ -79,11 +86,11 @@ h2 {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 #search {
-  width: min(420px, 95%);
+  width: min(460px, 92%);
   padding: 13px 15px;
   font-size: 16px;
   border: 1px solid #bbb;
@@ -93,95 +100,64 @@ h2 {
 button {
   border: 0;
   background: #222;
-  color: white;
-  padding: 12px 17px;
+  color: #fff;
+  padding: 12px 18px;
   border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
 }
 
+button:active {
+  transform: scale(.98);
+}
+
 #status {
-  text-align: center;
   margin: 12px 0;
   color: #666;
 }
 
-
-/* SEARCH RESULTS */
-
 #results {
   max-width: 650px;
-  margin: auto;
+  margin: 0 auto 20px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
   overflow: hidden;
   display: none;
+  text-align: left;
 }
 
 .search-result {
   padding: 13px 15px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
-  text-align: left;
 }
 
 .search-result:hover {
   background: #f2f2f2;
 }
 
+.tree-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
 
-/* TREE AREA */
+#focusLabel {
+  color: #555;
+  margin-bottom: 24px;
+  font-size: 17px;
+}
 
 #treeArea {
-  width: 100%;
   overflow-x: auto;
-  padding: 30px 10px 80px;
+  padding: 20px 0 60px;
 }
 
-.tree-inner {
-  min-width: 850px;
-  text-align: center;
-}
-
-
-/* PERSON CARDS */
-
-.person-card {
-  display: inline-flex;
-  min-width: 165px;
-  max-width: 220px;
-  min-height: 62px;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 14px;
-  background: white;
-  border: 2px solid #aaa;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.08);
-  font-size: 15px;
-  font-weight: 650;
-  cursor: pointer;
-  position: relative;
-  transition:
-    transform .15s,
-    box-shadow .15s;
-}
-
-.person-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,.13);
-}
-
-.person-card.focus {
-  border-color: #222;
-  border-width: 3px;
-  background: #f4f4f4;
-}
-
-.person-card.unknown {
-  color: #888;
-  border-style: dashed;
+#tree {
+  min-width: 800px;
+  margin: auto;
 }
 
 
@@ -190,82 +166,128 @@ button {
 .generation-title {
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: #888;
-  margin: 10px 0 18px;
+  margin: 10px 0 20px;
+}
+
+
+/* CARDS */
+
+.person-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 170px;
+  max-width: 240px;
+  min-height: 66px;
+
+  padding: 11px 15px;
+
+  background: white;
+  border: 2px solid #aaa;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+  font-size: 15px;
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+.person-card.focus {
+  border: 3px solid #222;
+  background: #f1f1f1;
+}
+
+.person-card.unknown {
+  color: #999;
+  border-style: dashed;
+}
+
+.person-card:hover {
+  background: #f7f7f7;
 }
 
 
 /* PARENTS */
 
-.parents {
+.parents-wrap {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 28px;
-  position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
-.parents::after {
+.parents-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.parent-spouse-line {
+  width: 45px;
+  border-top: 3px solid #777;
+}
+
+.parents-wrap::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -30px;
-  height: 30px;
+  bottom: -35px;
+  height: 35px;
   border-left: 2px solid #888;
 }
 
-.parents::before {
-  content: "";
-  position: absolute;
-  top: 31px;
-  left: calc(50% - 100px);
-  right: calc(50% - 100px);
-  border-top: 2px solid #888;
-}
 
+/* CURRENT COUPLE */
 
-/* CURRENT PERSON + PARTNER */
-
-.current-family {
+.family-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 26px;
+  margin-bottom: 55px;
   position: relative;
-  margin-bottom: 45px;
+}
+
+.family-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .partner-line {
   width: 55px;
-  border-top: 3px solid #666;
+  border-top: 3px solid #555;
+}
+
+.family-wrap.has-children::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  height: 35px;
+  border-left: 2px solid #888;
 }
 
 
 /* CHILDREN */
 
-.children-section {
+.children-wrap {
   position: relative;
-  padding-top: 35px;
-}
-
-.children-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 35px;
-  border-left: 2px solid #888;
+  padding-top: 30px;
 }
 
 .children-row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 35px;
+  gap: 32px;
   position: relative;
-  padding-top: 30px;
 }
 
 .children-row::before {
@@ -279,54 +301,24 @@ button {
 
 .child-branch {
   position: relative;
+  padding-top: 28px;
 }
 
 .child-branch::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: 0;
   left: 50%;
-  height: 30px;
+  height: 28px;
   border-left: 2px solid #888;
 }
 
-
-/* GRANDCHILDREN */
-
-.descendants {
-  margin-top: 20px;
-}
-
-.descendant-row {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 25px;
-  position: relative;
-}
-
-.small-card {
-  min-width: 130px;
-  max-width: 175px;
-  min-height: 52px;
+.no-children {
+  color: #888;
   font-size: 13px;
-}
-
-
-/* NAVIGATION */
-
-.tree-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.focus-label {
-  text-align: center;
-  margin: 5px 0 25px;
-  font-size: 17px;
-  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
 }
 
 
@@ -335,7 +327,7 @@ button {
 @media (max-width: 700px) {
 
   header {
-    padding: 24px 10px 10px;
+    padding: 22px 10px 12px;
   }
 
   main {
@@ -343,27 +335,18 @@ button {
     padding-right: 5px;
   }
 
-  #treeArea {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .tree-inner {
-    min-width: 760px;
+  #tree {
+    min-width: 740px;
   }
 
   .person-card {
     min-width: 145px;
-    max-width: 180px;
+    max-width: 190px;
     font-size: 14px;
   }
 
-  .parents {
-    gap: 24px;
-  }
-
   .children-row {
-    gap: 22px;
+    gap: 20px;
   }
 
 }
@@ -378,75 +361,73 @@ button {
 
 <header>
 
-<h1>Horridge Family Tree</h1>
+  <h1>Horridge Family Tree</h1>
 
-<img
-  src="2023-05-06.JPG"
-  alt="Horridge Family"
-  class="family-photo"
->
+  <img
+    src="2023-05-06.JPG"
+    alt="Horridge Family"
+    class="family-photo"
+  >
 
-<p class="caption">
-Family photo from 6th May 2023
-</p>
+  <p class="caption">
+    Family photo from 6th May 2023
+  </p>
+
+  <div class="version">
+    Tree version 4
+  </div>
 
 </header>
 
 
 <main>
 
-<h2>Explore the Family Tree</h2>
+  <h2>Explore the Family Tree</h2>
 
-<p class="intro">
-Search for a family member or tap any name to explore their family.
-</p>
-
-
-<div class="controls">
-
-<input
-  id="search"
-  type="search"
-  placeholder="Search family member..."
->
-
-<button id="homeButton">
-Andrew
-</button>
-
-</div>
+  <p class="intro">
+    Search for a family member or tap any name to explore their family.
+  </p>
 
 
-<div id="results"></div>
+  <div class="controls">
 
-<div id="status">
-Loading family tree…
-</div>
+    <input
+      id="search"
+      type="search"
+      placeholder="Search family member..."
+    >
 
+    <button id="homeButton">
+      Andrew
+    </button>
 
-<div class="tree-nav">
-
-<button id="backButton">
-← Back
-</button>
-
-</div>
-
-
-<div
-  id="focusLabel"
-  class="focus-label"
-></div>
+  </div>
 
 
-<div id="treeArea">
+  <div id="results"></div>
 
-<div
-  id="tree"
-  class="tree-inner"
-></div>
+  <div id="status">
+    Loading family tree…
+  </div>
 
-</div>
+
+  <div class="tree-nav">
+
+    <button id="backButton">
+      ← Back
+    </button>
+
+  </div>
+
+
+  <div id="focusLabel"></div>
+
+
+  <div id="treeArea">
+
+    <div id="tree"></div>
+
+  </div>
 
 
 </main>
@@ -455,45 +436,57 @@ Loading family tree…
 <script>
 
 let people = [];
+
 let peopleMap = new Map();
+
 let currentPersonId = 1;
+
 let historyStack = [];
 
 
-/* ----------------------------------
-   KNOWN PARTNER LINKS
+/*
+  Explicit partner links.
 
-   Andrew = 1
-   Sarah = 4
----------------------------------- */
+  Andrew = 1
+  Sarah = 4
+
+  Roy = 2
+  Sheila = 3
+*/
 
 const knownPartners = {
+
   1: [4],
-  4: [1]
+  4: [1],
+
+  2: [3],
+  3: [2]
+
 };
 
 
-/* ----------------------------------
+/* --------------------------------
    LOAD DATA
----------------------------------- */
+-------------------------------- */
 
-async function loadFamilyTree() {
+async function loadTree() {
 
   const status =
-    document.getElementById("status");
+    document.getElementById(
+      "status"
+    );
 
   try {
 
     const response =
       await fetch(
-        "tree-data.json?v=" +
-        Date.now()
+        "tree-data.json?v=4"
       );
 
     if (!response.ok) {
 
       throw new Error(
-        "tree-data.json could not be loaded"
+        "Could not load tree-data.json"
       );
 
     }
@@ -508,13 +501,17 @@ async function loadFamilyTree() {
         Number(person.id);
 
       if (person.pid) {
+
         person.pid =
           Number(person.pid);
+
       }
 
       if (person.mid) {
+
         person.mid =
           Number(person.mid);
+
       }
 
       peopleMap.set(
@@ -535,10 +532,13 @@ async function loadFamilyTree() {
       status.style.display =
         "none";
 
-    }, 1800);
+    }, 1500);
 
 
-    showPerson(1, false);
+    showPerson(
+      1,
+      false
+    );
 
   }
 
@@ -548,7 +548,7 @@ async function loadFamilyTree() {
       "red";
 
     status.textContent =
-      "Error loading tree: " +
+      "Error: " +
       error.message;
 
   }
@@ -556,13 +556,17 @@ async function loadFamilyTree() {
 }
 
 
-/* ----------------------------------
+/* --------------------------------
    GET PERSON
----------------------------------- */
+-------------------------------- */
 
 function getPerson(id) {
 
-  if (!id) return null;
+  if (!id) {
+
+    return null;
+
+  }
 
   return peopleMap.get(
     Number(id)
@@ -571,53 +575,59 @@ function getPerson(id) {
 }
 
 
-/* ----------------------------------
-   FIND CHILDREN
----------------------------------- */
+/* --------------------------------
+   GET CHILDREN
+-------------------------------- */
 
 function getChildren(personId) {
 
-  return people.filter(person =>
+  return people.filter(
+    person =>
 
-    person.pid === personId ||
+      person.pid === personId ||
 
-    person.mid === personId
+      person.mid === personId
 
   );
 
 }
 
 
-/* ----------------------------------
-   FIND PARTNERS
----------------------------------- */
+/* --------------------------------
+   GET PARTNERS
+-------------------------------- */
 
 function getPartners(personId) {
 
-  const partnerIds =
+  const ids =
     new Set();
 
 
-  /* Known explicit partners */
+  /*
+    Explicit known partner links
+  */
 
   if (
     knownPartners[personId]
   ) {
 
-    knownPartners[personId]
-      .forEach(id => {
-
-        partnerIds.add(id);
-
-      });
+    knownPartners[
+      personId
+    ].forEach(
+      id => ids.add(id)
+    );
 
   }
 
 
-  /* Also infer from shared children */
+  /*
+    Infer from shared children
+  */
 
   const children =
-    getChildren(personId);
+    getChildren(
+      personId
+    );
 
 
   children.forEach(child => {
@@ -628,7 +638,7 @@ function getPartners(personId) {
       child.mid !== personId
     ) {
 
-      partnerIds.add(
+      ids.add(
         child.mid
       );
 
@@ -640,7 +650,7 @@ function getPartners(personId) {
       child.pid !== personId
     ) {
 
-      partnerIds.add(
+      ids.add(
         child.pid
       );
 
@@ -649,25 +659,22 @@ function getPartners(personId) {
   });
 
 
-  return Array.from(
-    partnerIds
-  )
-  .map(id =>
-    getPerson(id)
-  )
-  .filter(Boolean);
+  return Array.from(ids)
+    .map(
+      id => getPerson(id)
+    )
+    .filter(Boolean);
 
 }
 
 
-/* ----------------------------------
-   PERSON CARD
----------------------------------- */
+/* --------------------------------
+   CREATE PERSON CARD
+-------------------------------- */
 
 function createCard(
   person,
-  focus = false,
-  small = false
+  focus = false
 ) {
 
   const card =
@@ -688,15 +695,6 @@ function createCard(
   }
 
 
-  if (small) {
-
-    card.classList.add(
-      "small-card"
-    );
-
-  }
-
-
   if (!person) {
 
     card.classList.add(
@@ -712,25 +710,27 @@ function createCard(
 
 
   card.textContent =
-    person.name ||
-    "Unknown";
+    person.name;
 
 
-  card.onclick = () => {
+  card.addEventListener(
+    "click",
+    () => {
 
-    if (
-      person.id !==
-      currentPersonId
-    ) {
+      if (
+        person.id !==
+        currentPersonId
+      ) {
 
-      showPerson(
-        person.id,
-        true
-      );
+        showPerson(
+          person.id,
+          true
+        );
+
+      }
 
     }
-
-  };
+  );
 
 
   return card;
@@ -738,9 +738,9 @@ function createCard(
 }
 
 
-/* ----------------------------------
-   DISPLAY PERSON
----------------------------------- */
+/* --------------------------------
+   SHOW PERSON
+-------------------------------- */
 
 function showPerson(
   personId,
@@ -748,9 +748,15 @@ function showPerson(
 ) {
 
   const person =
-    getPerson(personId);
+    getPerson(
+      personId
+    );
 
-  if (!person) return;
+  if (!person) {
+
+    return;
+
+  }
 
 
   if (
@@ -786,9 +792,9 @@ function showPerson(
   tree.innerHTML = "";
 
 
-/* ----------------------------------
+/* ================================
    PARENTS
----------------------------------- */
+================================ */
 
   const parentTitle =
     document.createElement(
@@ -806,13 +812,22 @@ function showPerson(
   );
 
 
-  const parents =
+  const parentsWrap =
     document.createElement(
       "div"
     );
 
-  parents.className =
-    "parents";
+  parentsWrap.className =
+    "parents-wrap";
+
+
+  const parentsRow =
+    document.createElement(
+      "div"
+    );
+
+  parentsRow.className =
+    "parents-row";
 
 
   const father =
@@ -826,38 +841,65 @@ function showPerson(
     );
 
 
-  parents.appendChild(
+  parentsRow.appendChild(
     createCard(father)
   );
 
-  parents.appendChild(
-    createCard(mother)
-  );
 
-
-  tree.appendChild(
-    parents
-  );
-
-
-/* ----------------------------------
-   PERSON + PARTNER
----------------------------------- */
-
-  const currentTitle =
+  const parentLine =
     document.createElement(
       "div"
     );
 
-  currentTitle.className =
+  parentLine.className =
+    "parent-spouse-line";
+
+  parentsRow.appendChild(
+    parentLine
+  );
+
+
+  parentsRow.appendChild(
+    createCard(mother)
+  );
+
+
+  parentsWrap.appendChild(
+    parentsRow
+  );
+
+  tree.appendChild(
+    parentsWrap
+  );
+
+
+/* ================================
+   CURRENT PERSON + PARTNER
+================================ */
+
+  const familyTitle =
+    document.createElement(
+      "div"
+    );
+
+  familyTitle.className =
     "generation-title";
 
-  currentTitle.textContent =
+  familyTitle.textContent =
     "Family";
 
   tree.appendChild(
-    currentTitle
+    familyTitle
   );
+
+
+  const familyWrap =
+    document.createElement(
+      "div"
+    );
+
+  familyWrap.className =
+    "family-wrap";
 
 
   const familyRow =
@@ -866,7 +908,7 @@ function showPerson(
     );
 
   familyRow.className =
-    "current-family";
+    "family-row";
 
 
   familyRow.appendChild(
@@ -886,16 +928,16 @@ function showPerson(
   partners.forEach(
     partner => {
 
-      const line =
+      const partnerLine =
         document.createElement(
           "div"
         );
 
-      line.className =
+      partnerLine.className =
         "partner-line";
 
       familyRow.appendChild(
-        line
+        partnerLine
       );
 
       familyRow.appendChild(
@@ -908,20 +950,34 @@ function showPerson(
   );
 
 
-  tree.appendChild(
+  familyWrap.appendChild(
     familyRow
   );
 
-
-/* ----------------------------------
-   CHILDREN
----------------------------------- */
 
   const children =
     getChildren(
       person.id
     );
 
+
+  if (children.length) {
+
+    familyWrap.classList.add(
+      "has-children"
+    );
+
+  }
+
+
+  tree.appendChild(
+    familyWrap
+  );
+
+
+/* ================================
+   CHILDREN
+================================ */
 
   if (children.length) {
 
@@ -941,21 +997,21 @@ function showPerson(
     );
 
 
-    const section =
+    const childrenWrap =
       document.createElement(
         "div"
       );
 
-    section.className =
-      "children-section";
+    childrenWrap.className =
+      "children-wrap";
 
 
-    const row =
+    const childrenRow =
       document.createElement(
         "div"
       );
 
-    row.className =
+    childrenRow.className =
       "children-row";
 
 
@@ -972,70 +1028,11 @@ function showPerson(
 
 
         branch.appendChild(
-          createCard(
-            child
-          )
+          createCard(child)
         );
 
 
-        const grandchildren =
-          getChildren(
-            child.id
-          );
-
-
-        if (
-          grandchildren.length
-        ) {
-
-          const descendant =
-            document.createElement(
-              "div"
-            );
-
-          descendant.className =
-            "descendants";
-
-
-          const descendantRow =
-            document.createElement(
-              "div"
-            );
-
-          descendantRow.className =
-            "descendant-row";
-
-
-          grandchildren
-            .slice(0, 5)
-            .forEach(
-              grandchild => {
-
-                descendantRow
-                  .appendChild(
-                    createCard(
-                      grandchild,
-                      false,
-                      true
-                    )
-                  );
-
-              }
-            );
-
-
-          descendant.appendChild(
-            descendantRow
-          );
-
-          branch.appendChild(
-            descendant
-          );
-
-        }
-
-
-        row.appendChild(
+        childrenRow.appendChild(
           branch
         );
 
@@ -1043,12 +1040,13 @@ function showPerson(
     );
 
 
-    section.appendChild(
-      row
+    childrenWrap.appendChild(
+      childrenRow
     );
 
+
     tree.appendChild(
-      section
+      childrenWrap
     );
 
   }
@@ -1061,7 +1059,7 @@ function showPerson(
       );
 
     noChildren.className =
-      "generation-title";
+      "no-children";
 
     noChildren.textContent =
       "No children recorded";
@@ -1073,21 +1071,19 @@ function showPerson(
   }
 
 
-  document
-    .getElementById(
-      "treeArea"
-    )
-    .scrollTo({
-      left: 0,
-      behavior: "smooth"
-    });
+  document.getElementById(
+    "treeArea"
+  ).scrollTo({
+    left: 0,
+    behavior: "smooth"
+  });
 
 }
 
 
-/* ----------------------------------
+/* --------------------------------
    SEARCH
----------------------------------- */
+-------------------------------- */
 
 const searchBox =
   document.getElementById(
@@ -1125,33 +1121,37 @@ searchBox.addEventListener(
 
 
     const matches =
-      people
-      .filter(person =>
+      people.filter(
+        person =>
 
-        person.name
-          .toLowerCase()
-          .includes(value)
+          person.name
+            .toLowerCase()
+            .includes(value)
 
       )
-      .slice(0, 15);
+      .slice(
+        0,
+        15
+      );
 
 
     matches.forEach(
       person => {
 
-        const item =
+        const result =
           document.createElement(
             "div"
           );
 
-        item.className =
+        result.className =
           "search-result";
 
-        item.textContent =
+        result.textContent =
           person.name;
 
 
-        item.onclick =
+        result.addEventListener(
+          "click",
           () => {
 
             searchBox.value =
@@ -1165,11 +1165,12 @@ searchBox.addEventListener(
               true
             );
 
-          };
+          }
+        );
 
 
         resultsBox.appendChild(
-          item
+          result
         );
 
       }
@@ -1185,40 +1186,15 @@ searchBox.addEventListener(
 );
 
 
-/* ----------------------------------
-   BACK
----------------------------------- */
+/* --------------------------------
+   HOME BUTTON
+-------------------------------- */
 
-document
-  .getElementById(
-    "backButton"
-  )
-  .onclick = () => {
-
-    if (!historyStack.length) {
-      return;
-    }
-
-    const previous =
-      historyStack.pop();
-
-    showPerson(
-      previous,
-      false
-    );
-
-  };
-
-
-/* ----------------------------------
-   HOME
----------------------------------- */
-
-document
-  .getElementById(
-    "homeButton"
-  )
-  .onclick = () => {
+document.getElementById(
+  "homeButton"
+).addEventListener(
+  "click",
+  () => {
 
     historyStack = [];
 
@@ -1227,10 +1203,46 @@ document
       false
     );
 
-  };
+  }
+);
 
 
-loadFamilyTree();
+/* --------------------------------
+   BACK BUTTON
+-------------------------------- */
+
+document.getElementById(
+  "backButton"
+).addEventListener(
+  "click",
+  () => {
+
+    if (
+      historyStack.length === 0
+    ) {
+
+      return;
+
+    }
+
+    const previous =
+      historyStack.pop();
+
+
+    showPerson(
+      previous,
+      false
+    );
+
+  }
+);
+
+
+/* --------------------------------
+   START
+-------------------------------- */
+
+loadTree();
 
 </script>
 
