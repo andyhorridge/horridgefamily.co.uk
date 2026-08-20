@@ -156,7 +156,7 @@ button:active {
 }
 
 #tree {
-  min-width: 800px;
+  min-width: 820px;
   margin: auto;
 }
 
@@ -226,7 +226,6 @@ button:active {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  position: relative;
 }
 
 .parent-spouse-line {
@@ -244,7 +243,7 @@ button:active {
 }
 
 
-/* CURRENT COUPLE */
+/* CURRENT FAMILY */
 
 .family-wrap {
   display: flex;
@@ -374,7 +373,7 @@ button:active {
   </p>
 
   <div class="version">
-    Tree version 4
+    Tree version 5
   </div>
 
 </header>
@@ -444,27 +443,6 @@ let currentPersonId = 1;
 let historyStack = [];
 
 
-/*
-  Explicit partner links.
-
-  Andrew = 1
-  Sarah = 4
-
-  Roy = 2
-  Sheila = 3
-*/
-
-const knownPartners = {
-
-  1: [4],
-  4: [1],
-
-  2: [3],
-  3: [2]
-
-};
-
-
 /* --------------------------------
    LOAD DATA
 -------------------------------- */
@@ -472,15 +450,13 @@ const knownPartners = {
 async function loadTree() {
 
   const status =
-    document.getElementById(
-      "status"
-    );
+    document.getElementById("status");
 
   try {
 
     const response =
       await fetch(
-        "tree-data.json?v=4"
+        "tree-data.json?v=5"
       );
 
     if (!response.ok) {
@@ -500,19 +476,30 @@ async function loadTree() {
       person.id =
         Number(person.id);
 
-      if (person.pid) {
-
-        person.pid =
-          Number(person.pid);
-
+      if (person.father) {
+        person.father =
+          Number(person.father);
       }
 
-      if (person.mid) {
-
-        person.mid =
-          Number(person.mid);
-
+      if (person.mother) {
+        person.mother =
+          Number(person.mother);
       }
+
+      if (!Array.isArray(person.partners)) {
+        person.partners = [];
+      }
+
+      if (!Array.isArray(person.children)) {
+        person.children = [];
+      }
+
+      person.partners =
+        person.partners.map(Number);
+
+      person.children =
+        person.children.map(Number);
+
 
       peopleMap.set(
         person.id,
@@ -563,9 +550,7 @@ async function loadTree() {
 function getPerson(id) {
 
   if (!id) {
-
     return null;
-
   }
 
   return peopleMap.get(
@@ -581,14 +566,21 @@ function getPerson(id) {
 
 function getChildren(personId) {
 
-  return people.filter(
-    person =>
+  const person =
+    getPerson(personId);
 
-      person.pid === personId ||
+  if (
+    !person ||
+    !Array.isArray(person.children)
+  ) {
 
-      person.mid === personId
+    return [];
 
-  );
+  }
+
+  return person.children
+    .map(id => getPerson(id))
+    .filter(Boolean);
 
 }
 
@@ -599,70 +591,20 @@ function getChildren(personId) {
 
 function getPartners(personId) {
 
-  const ids =
-    new Set();
-
-
-  /*
-    Explicit known partner links
-  */
+  const person =
+    getPerson(personId);
 
   if (
-    knownPartners[personId]
+    !person ||
+    !Array.isArray(person.partners)
   ) {
 
-    knownPartners[
-      personId
-    ].forEach(
-      id => ids.add(id)
-    );
+    return [];
 
   }
 
-
-  /*
-    Infer from shared children
-  */
-
-  const children =
-    getChildren(
-      personId
-    );
-
-
-  children.forEach(child => {
-
-    if (
-      child.pid === personId &&
-      child.mid &&
-      child.mid !== personId
-    ) {
-
-      ids.add(
-        child.mid
-      );
-
-    }
-
-    if (
-      child.mid === personId &&
-      child.pid &&
-      child.pid !== personId
-    ) {
-
-      ids.add(
-        child.pid
-      );
-
-    }
-
-  });
-
-
-  return Array.from(ids)
-    .map(
-      id => getPerson(id)
-    )
+  return person.partners
+    .map(id => getPerson(id))
     .filter(Boolean);
 
 }
@@ -678,9 +620,7 @@ function createCard(
 ) {
 
   const card =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   card.className =
     "person-card";
@@ -710,7 +650,7 @@ function createCard(
 
 
   card.textContent =
-    person.name;
+    person.name || "Unknown";
 
 
   card.addEventListener(
@@ -748,14 +688,10 @@ function showPerson(
 ) {
 
   const person =
-    getPerson(
-      personId
-    );
+    getPerson(personId);
 
   if (!person) {
-
     return;
-
   }
 
 
@@ -788,7 +724,6 @@ function showPerson(
       "tree"
     );
 
-
   tree.innerHTML = "";
 
 
@@ -797,9 +732,7 @@ function showPerson(
 ================================ */
 
   const parentTitle =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   parentTitle.className =
     "generation-title";
@@ -813,18 +746,14 @@ function showPerson(
 
 
   const parentsWrap =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   parentsWrap.className =
     "parents-wrap";
 
 
   const parentsRow =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   parentsRow.className =
     "parents-row";
@@ -832,12 +761,12 @@ function showPerson(
 
   const father =
     getPerson(
-      person.pid
+      person.father
     );
 
   const mother =
     getPerson(
-      person.mid
+      person.mother
     );
 
 
@@ -847,9 +776,7 @@ function showPerson(
 
 
   const parentLine =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   parentLine.className =
     "parent-spouse-line";
@@ -874,13 +801,11 @@ function showPerson(
 
 
 /* ================================
-   CURRENT PERSON + PARTNER
+   CURRENT PERSON + PARTNERS
 ================================ */
 
   const familyTitle =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   familyTitle.className =
     "generation-title";
@@ -894,18 +819,14 @@ function showPerson(
 
 
   const familyWrap =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   familyWrap.className =
     "family-wrap";
 
 
   const familyRow =
-    document.createElement(
-      "div"
-    );
+    document.createElement("div");
 
   familyRow.className =
     "family-row";
@@ -929,9 +850,7 @@ function showPerson(
     partner => {
 
       const partnerLine =
-        document.createElement(
-          "div"
-        );
+        document.createElement("div");
 
       partnerLine.className =
         "partner-line";
@@ -941,9 +860,7 @@ function showPerson(
       );
 
       familyRow.appendChild(
-        createCard(
-          partner
-        )
+        createCard(partner)
       );
 
     }
@@ -982,9 +899,7 @@ function showPerson(
   if (children.length) {
 
     const childTitle =
-      document.createElement(
-        "div"
-      );
+      document.createElement("div");
 
     childTitle.className =
       "generation-title";
@@ -998,18 +913,14 @@ function showPerson(
 
 
     const childrenWrap =
-      document.createElement(
-        "div"
-      );
+      document.createElement("div");
 
     childrenWrap.className =
       "children-wrap";
 
 
     const childrenRow =
-      document.createElement(
-        "div"
-      );
+      document.createElement("div");
 
     childrenRow.className =
       "children-row";
@@ -1019,9 +930,7 @@ function showPerson(
       child => {
 
         const branch =
-          document.createElement(
-            "div"
-          );
+          document.createElement("div");
 
         branch.className =
           "child-branch";
@@ -1054,9 +963,7 @@ function showPerson(
   else {
 
     const noChildren =
-      document.createElement(
-        "div"
-      );
+      document.createElement("div");
 
     noChildren.className =
       "no-children";
@@ -1139,9 +1046,7 @@ searchBox.addEventListener(
       person => {
 
         const result =
-          document.createElement(
-            "div"
-          );
+          document.createElement("div");
 
         result.className =
           "search-result";
