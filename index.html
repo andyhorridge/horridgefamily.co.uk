@@ -18,72 +18,79 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  background: #f7f7f7;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  padding: 0;
+  background: #f6f6f6;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
   color: #222;
 }
 
 header {
   text-align: center;
-  padding: 35px 20px 20px;
+  padding: 30px 15px 15px;
 }
 
 h1 {
-  font-size: clamp(36px, 7vw, 62px);
-  margin: 0 0 30px;
+  margin: 0 0 25px;
+  font-size: clamp(34px, 7vw, 58px);
 }
 
 .family-photo {
-  display: block;
-  width: min(90%, 850px);
+  width: min(90%, 800px);
   height: auto;
+  display: block;
   margin: auto;
   border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.12);
+  box-shadow: 0 8px 25px rgba(0,0,0,.12);
 }
 
 .caption {
   color: #666;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
-.tree-section {
-  padding: 20px;
-  max-width: 1400px;
+main {
+  max-width: 1600px;
   margin: auto;
+  padding: 20px 10px 50px;
 }
 
-.tree-section h2 {
+h2 {
   text-align: center;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(28px, 5vw, 44px);
   margin-bottom: 8px;
 }
 
-.instructions {
+.intro {
   text-align: center;
   color: #666;
-  margin-bottom: 25px;
+  margin: 0 auto 22px;
 }
 
 .controls {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.controls input {
-  width: min(100%, 400px);
-  padding: 13px 16px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+#search {
+  width: min(420px, 95%);
+  padding: 13px 15px;
   font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
 }
 
-.controls button {
+button {
   border: 0;
   background: #222;
   color: white;
@@ -95,136 +102,311 @@ h1 {
 
 #status {
   text-align: center;
-  font-weight: 600;
-  margin: 20px;
+  margin: 12px 0;
+  color: #666;
 }
 
-#tree {
+
+/* SEARCH RESULTS */
+
+#results {
+  max-width: 650px;
+  margin: auto;
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 25px;
-  min-height: 500px;
-  overflow: auto;
-}
-
-
-/* TREE */
-
-.family-tree,
-.family-tree ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 28px;
-  position: relative;
-}
-
-.family-tree {
-  padding-left: 0;
-}
-
-.family-tree ul::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  bottom: 12px;
-  border-left: 2px solid #ccc;
-}
-
-.family-tree li {
-  position: relative;
-  padding: 7px 0 7px 18px;
-}
-
-.family-tree li::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 25px;
-  width: 28px;
-  border-top: 2px solid #ccc;
-}
-
-.family-tree > li::before {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  overflow: hidden;
   display: none;
 }
 
-.person {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 42px;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 9px 13px;
-  font-weight: 600;
-  box-shadow: 0 2px 7px rgba(0,0,0,.06);
+.search-result {
+  padding: 13px 15px;
+  border-bottom: 1px solid #eee;
   cursor: pointer;
-  user-select: none;
+  text-align: left;
 }
 
-.person:hover {
+.search-result:hover {
   background: #f2f2f2;
 }
 
-.toggle {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #222;
-  color: white;
+
+/* TREE AREA */
+
+#treeArea {
+  width: 100%;
+  overflow-x: auto;
+  padding: 30px 10px 80px;
+}
+
+.tree-inner {
+  min-width: 850px;
+  text-align: center;
+}
+
+
+/* PERSON CARDS */
+
+.person-card {
   display: inline-flex;
+  min-width: 165px;
+  max-width: 220px;
+  min-height: 62px;
+
   align-items: center;
   justify-content: center;
+
+  padding: 10px 14px;
+
+  background: white;
+
+  border: 2px solid #aaa;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
   font-size: 15px;
-  flex-shrink: 0;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition:
+    transform .15s,
+    box-shadow .15s;
 }
 
-.no-children .toggle {
-  visibility: hidden;
+.person-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,.13);
 }
 
-.children.collapsed {
-  display: none;
+.person-card.focus {
+  border-color: #222;
+  border-width: 3px;
+  background: #f4f4f4;
 }
 
-.highlight > .person {
-  background: #fff3a6;
-  border-color: #d3ad00;
+.person-card.unknown {
+  color: #888;
+  border-style: dashed;
 }
 
-.branch-title {
-  margin: 30px 0 12px;
-  font-size: 20px;
-  font-weight: 700;
+
+/* GENERATIONS */
+
+.generation-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin: 10px 0 18px;
+}
+
+
+/* PARENTS */
+
+.parents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+
+  position: relative;
+
+  margin-bottom: 55px;
+}
+
+.parents::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -30px;
+
+  height: 30px;
+
+  border-left: 2px solid #888;
+}
+
+.parent-pair {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.parent-pair::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  right: 50%;
+  top: 31px;
+
+  border-top: 2px solid #888;
+}
+
+
+/* CURRENT FAMILY */
+
+.current-family {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 26px;
+
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.partner-line {
+  width: 45px;
+  border-top: 3px solid #666;
+}
+
+
+/* CHILDREN */
+
+.children-section {
+  position: relative;
+  padding-top: 35px;
+}
+
+.children-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  height: 35px;
+
+  border-left: 2px solid #888;
+}
+
+.children-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 35px;
+
+  position: relative;
+
+  padding-top: 30px;
+}
+
+.children-row::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 8%;
+  right: 8%;
+
+  border-top: 2px solid #888;
+}
+
+.child-branch {
+  position: relative;
+}
+
+.child-branch::before {
+  content: "";
+
+  position: absolute;
+
+  top: -30px;
+  left: 50%;
+
+  height: 30px;
+
+  border-left: 2px solid #888;
+}
+
+
+/* GRANDCHILDREN */
+
+.descendants {
+  margin-top: 20px;
+}
+
+.descendant-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.small-card {
+  min-width: 130px;
+  max-width: 175px;
+  min-height: 52px;
+  font-size: 13px;
+}
+
+
+/* NAVIGATION */
+
+.tree-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.focus-label {
+  text-align: center;
+  margin: 5px 0 25px;
+  font-size: 17px;
   color: #555;
 }
 
-@media (max-width: 650px) {
+
+/* MOBILE */
+
+@media (max-width: 700px) {
 
   header {
-    padding: 25px 12px 15px;
+    padding: 24px 10px 10px;
   }
 
-  .tree-section {
-    padding: 10px;
+  main {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
-  #tree {
-    padding: 14px 8px;
-    border-radius: 12px;
+  #treeArea {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .family-tree,
-  .family-tree ul {
-    padding-left: 19px;
+  .tree-inner {
+    min-width: 760px;
   }
 
-  .person {
+  .person-card {
+    min-width: 145px;
+    max-width: 180px;
     font-size: 14px;
-    padding: 8px 10px;
+  }
+
+  .parents {
+    gap: 30px;
+  }
+
+  .children-row {
+    gap: 22px;
   }
 
 }
@@ -239,260 +421,167 @@ h1 {
 
 <header>
 
-  <h1>Horridge Family Tree</h1>
+<h1>Horridge Family Tree</h1>
 
-  <img
-    class="family-photo"
-    src="2023-05-06.JPG"
-    alt="Horridge Family"
-  >
+<img
+  src="2023-05-06.JPG"
+  alt="Horridge Family"
+  class="family-photo"
+>
 
-  <p class="caption">
-    Family photo from 6th May 2023
-  </p>
+<p class="caption">
+Family photo from 6th May 2023
+</p>
 
 </header>
 
 
-<section class="tree-section">
+<main>
 
-  <h2>Explore the Family Tree</h2>
+<h2>Explore the Family Tree</h2>
 
-  <p class="instructions">
-    Tap a name to open or close that family branch.
-  </p>
-
-
-  <div class="controls">
-
-    <input
-      type="search"
-      id="search"
-      placeholder="Search family member..."
-    >
-
-    <button id="expandAll">
-      Expand all
-    </button>
-
-    <button id="collapseAll">
-      Collapse all
-    </button>
-
-  </div>
+<p class="intro">
+Search for a family member or tap any name to explore their family.
+</p>
 
 
-  <div id="status">
-    Loading family tree…
-  </div>
+<div class="controls">
+
+<input
+  id="search"
+  type="search"
+  placeholder="Search family member..."
+>
+
+<button id="homeButton">
+Andrew
+</button>
+
+</div>
 
 
-  <div id="tree"></div>
+<div id="results"></div>
 
-</section>
+<div id="status">
+Loading family tree…
+</div>
+
+
+<div class="tree-nav">
+
+<button id="backButton">
+← Back
+</button>
+
+</div>
+
+
+<div
+  id="focusLabel"
+  class="focus-label"
+></div>
+
+
+<div id="treeArea">
+
+<div
+  id="tree"
+  class="tree-inner"
+></div>
+
+</div>
+
+
+</main>
 
 
 <script>
 
-const treeContainer = document.getElementById("tree");
-const statusBox = document.getElementById("status");
+let people = [];
+
+let peopleMap = new Map();
+
+let currentPersonId = 1;
+
+let historyStack = [];
 
 
-async function loadTree() {
+/* ----------------------------------
+   LOAD DATA
+---------------------------------- */
+
+async function loadFamilyTree() {
+
+  const status =
+    document.getElementById("status");
 
   try {
 
-    const response = await fetch(
-      "tree-data.json?v=" + Date.now()
-    );
+    const response =
+      await fetch(
+        "tree-data.json?v=" +
+        Date.now()
+      );
 
     if (!response.ok) {
+
       throw new Error(
-        "Could not load tree-data.json"
+        "tree-data.json could not be loaded"
       );
+
     }
 
-    const people = await response.json();
+    people =
+      await response.json();
 
-    if (!Array.isArray(people)) {
-      throw new Error(
-        "tree-data.json is not valid family data"
-      );
-    }
-
-
-    const peopleById = new Map();
 
     people.forEach(person => {
 
-      peopleById.set(
-        Number(person.id),
-        {
-          ...person,
-          id: Number(person.id),
-          children: []
-        }
+      person.id =
+        Number(person.id);
+
+      if (person.pid) {
+        person.pid =
+          Number(person.pid);
+      }
+
+      if (person.mid) {
+        person.mid =
+          Number(person.mid);
+      }
+
+      peopleMap.set(
+        person.id,
+        person
       );
 
     });
 
 
-    /*
-      Build the visible tree.
-
-      We use father (pid) as the main tree parent.
-      If father isn't known, we use mother (mid).
-
-      This keeps every individual in a clean,
-      expandable hierarchy.
-    */
-
-    peopleById.forEach(person => {
-
-      let parentId = null;
-
-      if (
-        person.pid &&
-        Number(person.pid) !== person.id &&
-        peopleById.has(Number(person.pid))
-      ) {
-
-        parentId = Number(person.pid);
-
-      }
-
-      else if (
-        person.mid &&
-        Number(person.mid) !== person.id &&
-        peopleById.has(Number(person.mid))
-      ) {
-
-        parentId = Number(person.mid);
-
-      }
-
-
-      if (parentId) {
-
-        peopleById
-          .get(parentId)
-          .children
-          .push(person);
-
-      }
-
-    });
-
-
-    /*
-      Find top-level ancestors.
-    */
-
-    const childIds = new Set();
-
-    peopleById.forEach(person => {
-
-      person.children.forEach(child => {
-        childIds.add(child.id);
-      });
-
-    });
-
-
-    const roots = [];
-
-    peopleById.forEach(person => {
-
-      if (!childIds.has(person.id)) {
-        roots.push(person);
-      }
-
-    });
-
-
-    roots.sort((a,b) =>
-      a.name.localeCompare(b.name)
-    );
-
-
-    treeContainer.innerHTML = "";
-
-
-    const mainList =
-      document.createElement("ul");
-
-    mainList.className =
-      "family-tree";
-
-
-    roots.forEach(root => {
-
-      mainList.appendChild(
-        buildPerson(root, 0)
-      );
-
-    });
-
-
-    treeContainer.appendChild(mainList);
-
-
-    statusBox.textContent =
+    status.textContent =
       people.length +
       " family members loaded";
 
+
     setTimeout(() => {
-      statusBox.style.display = "none";
-    }, 2500);
+
+      status.style.display =
+        "none";
+
+    }, 1800);
 
 
-    /*
-      Start with deeper branches collapsed.
-    */
-
-    document
-      .querySelectorAll(
-        ".family-tree ul"
-      )
-      .forEach((ul, index) => {
-
-        if (index > 6) {
-
-          ul.classList.add(
-            "collapsed"
-          );
-
-          const parent =
-            ul.previousElementSibling;
-
-          if (parent) {
-
-            const toggle =
-              parent.querySelector(
-                ".toggle"
-              );
-
-            if (toggle) {
-              toggle.textContent = "+";
-            }
-
-          }
-
-        }
-
-      });
-
+    showPerson(1, false);
 
   }
 
-  catch (error) {
+  catch(error) {
 
-    console.error(error);
+    status.style.color =
+      "red";
 
-    statusBox.style.color = "red";
-
-    statusBox.textContent =
-      "Error loading family tree: " +
+    status.textContent =
+      "Error loading tree: " +
       error.message;
 
   }
@@ -501,305 +590,667 @@ async function loadTree() {
 
 
 
-function buildPerson(person, depth) {
+/* ----------------------------------
+   GET PERSON
+---------------------------------- */
 
-  const li =
-    document.createElement("li");
+function getPerson(id) {
 
-  li.dataset.name =
-    person.name.toLowerCase();
+  if (!id) return null;
 
-
-  const card =
-    document.createElement("div");
-
-  card.className = "person";
-
-
-  const toggle =
-    document.createElement("span");
-
-  toggle.className = "toggle";
-
-
-  if (person.children.length) {
-
-    toggle.textContent = "−";
-
-  }
-  else {
-
-    li.classList.add(
-      "no-children"
-    );
-
-  }
-
-
-  const name =
-    document.createElement("span");
-
-  name.textContent =
-    person.name || "Unknown";
-
-
-  card.appendChild(toggle);
-  card.appendChild(name);
-
-  li.appendChild(card);
-
-
-  if (person.children.length) {
-
-    const children =
-      document.createElement("ul");
-
-    children.className =
-      "children";
-
-
-    person.children
-      .sort((a,b) =>
-        a.name.localeCompare(b.name)
-      )
-      .forEach(child => {
-
-        children.appendChild(
-          buildPerson(
-            child,
-            depth + 1
-          )
-        );
-
-      });
-
-
-    li.appendChild(children);
-
-
-    card.addEventListener(
-      "click",
-      () => {
-
-        children.classList.toggle(
-          "collapsed"
-        );
-
-        toggle.textContent =
-          children.classList.contains(
-            "collapsed"
-          )
-          ? "+"
-          : "−";
-
-      }
-    );
-
-  }
-
-
-  return li;
+  return peopleMap.get(
+    Number(id)
+  ) || null;
 
 }
 
 
 
-/*
-  Expand everything
-*/
+/* ----------------------------------
+   FIND CHILDREN
+---------------------------------- */
 
-document
-  .getElementById("expandAll")
-  .addEventListener(
-    "click",
-    () => {
+function getChildren(personId) {
 
-      document
-        .querySelectorAll(
-          ".children"
+  return people.filter(person =>
+
+    person.pid === personId ||
+
+    person.mid === personId
+
+  );
+
+}
+
+
+
+/* ----------------------------------
+   FIND PARTNERS
+
+   A partner is inferred where
+   two people share a child.
+---------------------------------- */
+
+function getPartners(personId) {
+
+  const partnerIds =
+    new Set();
+
+  const children =
+    getChildren(personId);
+
+
+  children.forEach(child => {
+
+    if (
+      child.pid === personId &&
+      child.mid &&
+      child.mid !== personId
+    ) {
+
+      partnerIds.add(
+        child.mid
+      );
+
+    }
+
+    if (
+      child.mid === personId &&
+      child.pid &&
+      child.pid !== personId
+    ) {
+
+      partnerIds.add(
+        child.pid
+      );
+
+    }
+
+  });
+
+
+  return Array.from(
+    partnerIds
+  )
+  .map(id =>
+    getPerson(id)
+  )
+  .filter(Boolean);
+
+}
+
+
+
+/* ----------------------------------
+   PERSON CARD
+---------------------------------- */
+
+function createCard(
+  person,
+  focus = false,
+  small = false
+) {
+
+  const card =
+    document.createElement(
+      "div"
+    );
+
+  card.className =
+    "person-card";
+
+
+  if (focus) {
+
+    card.classList.add(
+      "focus"
+    );
+
+  }
+
+
+  if (small) {
+
+    card.classList.add(
+      "small-card"
+    );
+
+  }
+
+
+  if (!person) {
+
+    card.classList.add(
+      "unknown"
+    );
+
+    card.textContent =
+      "Unknown";
+
+    return card;
+
+  }
+
+
+  card.textContent =
+    person.name ||
+    "Unknown";
+
+
+  card.onclick = () => {
+
+    if (
+      person.id !==
+      currentPersonId
+    ) {
+
+      showPerson(
+        person.id,
+        true
+      );
+
+    }
+
+  };
+
+
+  return card;
+
+}
+
+
+
+/* ----------------------------------
+   DISPLAY PERSON
+---------------------------------- */
+
+function showPerson(
+  personId,
+  addHistory = true
+) {
+
+  const person =
+    getPerson(personId);
+
+  if (!person) return;
+
+
+  if (
+    addHistory &&
+    currentPersonId &&
+    currentPersonId !== personId
+  ) {
+
+    historyStack.push(
+      currentPersonId
+    );
+
+  }
+
+
+  currentPersonId =
+    personId;
+
+
+  document.getElementById(
+    "focusLabel"
+  ).textContent =
+    "Viewing " +
+    person.name;
+
+
+  const tree =
+    document.getElementById(
+      "tree"
+    );
+
+
+  tree.innerHTML = "";
+
+
+  /* PARENTS */
+
+  const parentTitle =
+    document.createElement(
+      "div"
+    );
+
+  parentTitle.className =
+    "generation-title";
+
+  parentTitle.textContent =
+    "Parents";
+
+  tree.appendChild(
+    parentTitle
+  );
+
+
+  const parents =
+    document.createElement(
+      "div"
+    );
+
+  parents.className =
+    "parents";
+
+
+  const father =
+    getPerson(
+      person.pid
+    );
+
+  const mother =
+    getPerson(
+      person.mid
+    );
+
+
+  parents.appendChild(
+    createCard(father)
+  );
+
+  parents.appendChild(
+    createCard(mother)
+  );
+
+
+  tree.appendChild(
+    parents
+  );
+
+
+  /* CURRENT PERSON + PARTNERS */
+
+  const currentTitle =
+    document.createElement(
+      "div"
+    );
+
+  currentTitle.className =
+    "generation-title";
+
+  currentTitle.textContent =
+    "Family";
+
+  tree.appendChild(
+    currentTitle
+  );
+
+
+  const familyRow =
+    document.createElement(
+      "div"
+    );
+
+  familyRow.className =
+    "current-family";
+
+
+  familyRow.appendChild(
+    createCard(
+      person,
+      true
+    )
+  );
+
+
+  const partners =
+    getPartners(
+      person.id
+    );
+
+
+  partners.forEach(
+    partner => {
+
+      const line =
+        document.createElement(
+          "div"
+        );
+
+      line.className =
+        "partner-line";
+
+      familyRow.appendChild(
+        line
+      );
+
+      familyRow.appendChild(
+        createCard(
+          partner
         )
-        .forEach(item => {
-
-          item.classList.remove(
-            "collapsed"
-          );
-
-        });
-
-
-      document
-        .querySelectorAll(
-          ".toggle"
-        )
-        .forEach(toggle => {
-
-          if (
-            toggle
-              .closest("li")
-              .querySelector(
-                ":scope > .children"
-              )
-          ) {
-
-            toggle.textContent =
-              "−";
-
-          }
-
-        });
+      );
 
     }
   );
 
 
-
-/*
-  Collapse everything
-*/
-
-document
-  .getElementById("collapseAll")
-  .addEventListener(
-    "click",
-    () => {
-
-      document
-        .querySelectorAll(
-          ".children"
-        )
-        .forEach(item => {
-
-          item.classList.add(
-            "collapsed"
-          );
-
-        });
-
-
-      document
-        .querySelectorAll(
-          ".toggle"
-        )
-        .forEach(toggle => {
-
-          if (
-            toggle
-              .closest("li")
-              .querySelector(
-                ":scope > .children"
-              )
-          ) {
-
-            toggle.textContent =
-              "+";
-
-          }
-
-        });
-
-    }
+  tree.appendChild(
+    familyRow
   );
 
 
+  /* CHILDREN */
 
-/*
-  Search
-*/
-
-document
-  .getElementById("search")
-  .addEventListener(
-    "input",
-    event => {
-
-      const value =
-        event.target.value
-          .toLowerCase()
-          .trim();
+  const children =
+    getChildren(
+      person.id
+    );
 
 
-      document
-        .querySelectorAll(
-          ".family-tree li"
-        )
-        .forEach(li => {
+  if (children.length) {
 
-          li.classList.remove(
-            "highlight"
+    const childTitle =
+      document.createElement(
+        "div"
+      );
+
+    childTitle.className =
+      "generation-title";
+
+    childTitle.textContent =
+      "Children";
+
+    tree.appendChild(
+      childTitle
+    );
+
+
+    const section =
+      document.createElement(
+        "div"
+      );
+
+    section.className =
+      "children-section";
+
+
+    const row =
+      document.createElement(
+        "div"
+      );
+
+    row.className =
+      "children-row";
+
+
+    children.forEach(
+      child => {
+
+        const branch =
+          document.createElement(
+            "div"
           );
 
-        });
+        branch.className =
+          "child-branch";
 
 
-      if (!value) {
-        return;
-      }
-
-
-      const matches =
-        Array.from(
-          document.querySelectorAll(
-            ".family-tree li"
-          )
-        )
-        .filter(li =>
-          li.dataset.name &&
-          li.dataset.name.includes(
-            value
+        branch.appendChild(
+          createCard(
+            child
           )
         );
 
 
-      matches.forEach(li => {
+        const grandchildren =
+          getChildren(
+            child.id
+          );
 
-        li.classList.add(
-          "highlight"
-        );
 
-
-        let parent = li.parentElement;
-
-        while (
-          parent &&
-          parent !== treeContainer
+        if (
+          grandchildren.length
         ) {
 
-          if (
-            parent.classList &&
-            parent.classList.contains(
-              "children"
-            )
-          ) {
-
-            parent.classList.remove(
-              "collapsed"
+          const descendant =
+            document.createElement(
+              "div"
             );
 
-          }
+          descendant.className =
+            "descendants";
 
-          parent =
-            parent.parentElement;
+
+          const descendantRow =
+            document.createElement(
+              "div"
+            );
+
+          descendantRow.className =
+            "descendant-row";
+
+
+          grandchildren
+            .slice(0, 5)
+            .forEach(
+              grandchild => {
+
+                descendantRow
+                  .appendChild(
+                    createCard(
+                      grandchild,
+                      false,
+                      true
+                    )
+                  );
+
+              }
+            );
+
+
+          descendant.appendChild(
+            descendantRow
+          );
+
+          branch.appendChild(
+            descendant
+          );
 
         }
 
-      });
 
-
-      if (matches.length) {
-
-        matches[0]
-          .scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-          });
+        row.appendChild(
+          branch
+        );
 
       }
+    );
 
-    }
+
+    section.appendChild(
+      row
+    );
+
+    tree.appendChild(
+      section
+    );
+
+  }
+
+  else {
+
+    const noChildren =
+      document.createElement(
+        "div"
+      );
+
+    noChildren.className =
+      "generation-title";
+
+    noChildren.textContent =
+      "No children recorded";
+
+    tree.appendChild(
+      noChildren
+    );
+
+  }
+
+
+  document
+    .getElementById(
+      "treeArea"
+    )
+    .scrollTo({
+      left: 0,
+      behavior: "smooth"
+    });
+
+}
+
+
+
+/* ----------------------------------
+   SEARCH
+---------------------------------- */
+
+const searchBox =
+  document.getElementById(
+    "search"
+  );
+
+const resultsBox =
+  document.getElementById(
+    "results"
   );
 
 
-loadTree();
+searchBox.addEventListener(
+  "input",
+  () => {
+
+    const value =
+      searchBox.value
+        .trim()
+        .toLowerCase();
+
+
+    resultsBox.innerHTML =
+      "";
+
+
+    if (!value) {
+
+      resultsBox.style.display =
+        "none";
+
+      return;
+
+    }
+
+
+    const matches =
+      people
+      .filter(person =>
+
+        person.name
+          .toLowerCase()
+          .includes(value)
+
+      )
+      .slice(0, 15);
+
+
+    matches.forEach(
+      person => {
+
+        const item =
+          document.createElement(
+            "div"
+          );
+
+        item.className =
+          "search-result";
+
+        item.textContent =
+          person.name;
+
+
+        item.onclick =
+          () => {
+
+            searchBox.value =
+              "";
+
+            resultsBox.style.display =
+              "none";
+
+            showPerson(
+              person.id,
+              true
+            );
+
+          };
+
+
+        resultsBox.appendChild(
+          item
+        );
+
+      }
+    );
+
+
+    resultsBox.style.display =
+      matches.length
+      ? "block"
+      : "none";
+
+  }
+);
+
+
+
+/* ----------------------------------
+   BACK
+---------------------------------- */
+
+document
+  .getElementById(
+    "backButton"
+  )
+  .onclick = () => {
+
+    if (!historyStack.length) {
+      return;
+    }
+
+    const previous =
+      historyStack.pop();
+
+    showPerson(
+      previous,
+      false
+    );
+
+  };
+
+
+
+/* ----------------------------------
+   HOME
+---------------------------------- */
+
+document
+  .getElementById(
+    "homeButton"
+  )
+  .onclick = () => {
+
+    historyStack = [];
+
+    showPerson(
+      1,
+      false
+    );
+
+  };
+
+
+
+loadFamilyTree();
 
 </script>
 
